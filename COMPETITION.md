@@ -59,4 +59,5 @@ A breach of a rule (an unpermitted source, a key in the page, a copied article o
 - Tests use Node's built-in runner, offline, with small saved fixtures; prove a test bites by breaking the code on purpose.
 - Check it in a browser at desktop width and in a 390 × 844 iframe, with no console errors. (Chrome blocks some ports, such as 5061; use 4100 to 4199.)
 - Never push, merge, or create GitHub repos or issues. Never write in another competitor's folder or worktree.
+- In the browser, only use tabs you created yourself, and close them when done. Never navigate or close the owner's tabs.
 - Plain British/Irish English. Words readers will see are drafts until the owner agrees them.
