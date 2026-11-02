@@ -21,7 +21,7 @@ The main session (the orchestrator) starts each phase, relays nothing secret, ve
 `C:\Users\jim_c\competition-board\` is shared by everyone, outside all worktrees. Live view: `npx serve C:\Users\jim_c\competition-board -l 4091`, then open http://localhost:4091.
 
 Each competitor writes only in its own folder, `agents/<name>/`:
-- `diary.md`: think-aloud notes, newest at the bottom, one entry per step: `## HH:MM · short title`, then two to five plain sentences on what you're trying and why, what you saw, and what you'll do next. Write after every meaningful step. Readers love the honest bits: doubts, dead ends, changes of mind.
+- `diary.md`: a progress log, newest at the bottom, one entry per step: `## HH:MM · short title`, then two to five plain sentences on what you did, what you found, what you decided and what's next. Write after every meaningful step. Include dead ends and changes of plan; they're the interesting part for readers.
 - `status.json`: `{ "name", "angle", "phase", "doing", "updated" }`, plus `"screenshot": "shot.png"` once there is one. Update it whenever `doing` changes.
 - `pitch.md`: the pitch (see below).
 - `feedback.md`: feedback you give, as sections headed `## To <Name> · <round>`, with **Keep**, **Steal**, **Improve** and **Drop** bullets, each specific and kind.
