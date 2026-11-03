@@ -40,7 +40,21 @@
   // Angle in degrees clockwise from the top, with Samhain at the top.
   function angleFor(y, m, d) { return yearPosition(y, m, d).progress * 360; }
 
-  var api = { SEASONS: SEASONS, QUARTER_ENGLISH: QUARTER_ENGLISH, yearPosition: yearPosition, dateFromIndex: dateFromIndex,
+  var MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  // Spoken text for the slider, for example "Day 3 of the old year, 3 November 2026".
+  function dayLabel(y, m, d) {
+    return 'Day ' + (yearPosition(y, m, d).dayIndex + 1) + ' of the old year, ' + d + ' ' + MONTH_NAMES[m - 1] + ' ' + y;
+  }
+
+  // Text sizes in drawing units. The phone drawing is 640 units wide and shown about 362 px wide.
+  var PHONE_SCALE = 362 / 640;
+  var FONT = {
+    phone: { irish: 24, english: 22, centreDate: 58, centreSeason: 34, centreSub: 24, tag: 21 },
+    wide: { irish: 19, english: 15 }
+  };
+
+  var api = { MONTH_NAMES: MONTH_NAMES, dayLabel: dayLabel, FONT: FONT, PHONE_SCALE: PHONE_SCALE, SEASONS: SEASONS, QUARTER_ENGLISH: QUARTER_ENGLISH, yearPosition: yearPosition, dateFromIndex: dateFromIndex,
               seasonFor: seasonFor, angleFor: angleFor };
   if (typeof module !== 'undefined' && module.exports) { module.exports = api; return; }
 
@@ -88,10 +102,11 @@
       var mid = (angles[i] + angles[i + 1]) / 2, lp = pt((R_OUT + R_IN) / 2, mid);
       // centre the label in the band's horizontal width at that height, so long names stay inside
       var ldy = lp[1] - C, xo = Math.sqrt(Math.max(0, R_OUT * R_OUT - ldy * ldy)), xi = Math.abs(ldy) < R_IN ? Math.sqrt(R_IN * R_IN - ldy * ldy) : 0;
-      lp[0] = C + (lp[0] > C ? 1 : -1) * (xi + xo) / 2;
+      lp[0] = C + (lp[0] > C ? 1 : -1) * ((xi + xo) / 2 - (compact ? 9 : 0));
       var cls = 'wl' + (isCur ? ' on' : '');
-      text(g, { x: lp[0], y: lp[1] - (compact ? 6 : 4), 'text-anchor': 'middle', 'class': cls + ' ir' + (compact ? ' big' : '') }, q.irish);
-      text(g, { x: lp[0], y: lp[1] + (compact ? 20 : 15), 'text-anchor': 'middle', 'class': cls + ' en' + (compact ? ' big' : '') }, q.english);
+      var ti = text(g, { x: lp[0], y: lp[1] - (compact ? 6 : 4), 'text-anchor': 'middle', 'class': cls + ' ir' }, q.irish);
+      var te = text(g, { x: lp[0], y: lp[1] + (compact ? 24 : 15), 'text-anchor': 'middle', 'class': cls + ' en' }, q.english);
+      if (compact) { ti.setAttribute('style', 'font-size:' + FONT.phone.irish + 'px'); te.setAttribute('style', 'font-size:' + FONT.phone.english + 'px'); }
       if (opts.onPick) {
         var pick = function () { opts.onPick(q.id); };
         g.addEventListener('click', pick);
@@ -129,12 +144,14 @@
     el('circle', { cx: mp[0], cy: mp[1], r: dot, 'class': 'pulse', fill: 'none', stroke: 'var(--gold)', 'stroke-width': 3, 'pointer-events': 'none' }, svg);
     el('circle', { cx: mp[0], cy: mp[1], r: dot, fill: 'var(--gold)', stroke: 'var(--bg)', 'stroke-width': 3, 'pointer-events': 'none' }, svg);
     var tgp = pt(R_IN - (compact ? 34 : 26), ang);
-    text(svg, { x: tgp[0], y: tgp[1] + 5, 'text-anchor': 'middle', 'class': 'todaytag' + (compact ? ' big' : '') }, centre.tag || 'today');
+    var tt = text(svg, { x: tgp[0], y: tgp[1] + 5, 'text-anchor': 'middle', 'class': 'todaytag' }, centre.tag || 'today');
+    if (compact) tt.setAttribute('style', 'font-size:' + FONT.phone.tag + 'px');
 
     // centre
-    text(svg, { x: C, y: C - (compact ? 26 : 22), 'text-anchor': 'middle', 'class': 'c-date' + (compact ? ' big' : '') }, centre.date);
-    text(svg, { x: C, y: C + (compact ? 16 : 14), 'text-anchor': 'middle', 'class': 'c-season' + (compact ? ' big' : '') }, centre.season);
-    text(svg, { x: C, y: C + (compact ? 48 : 42), 'text-anchor': 'middle', 'class': 'c-sub' + (compact ? ' big' : '') }, centre.sub);
+    var c1 = text(svg, { x: C, y: C - (compact ? 26 : 22), 'text-anchor': 'middle', 'class': 'c-date' }, centre.date);
+    var c2 = text(svg, { x: C, y: C + (compact ? 16 : 14), 'text-anchor': 'middle', 'class': 'c-season' }, centre.season);
+    var c3 = text(svg, { x: C, y: C + (compact ? 50 : 42), 'text-anchor': 'middle', 'class': 'c-sub' }, centre.sub);
+    if (compact) { c1.setAttribute('style', 'font-size:' + FONT.phone.centreDate + 'px'); c2.setAttribute('style', 'font-size:' + FONT.phone.centreSeason + 'px'); c3.setAttribute('style', 'font-size:' + FONT.phone.centreSub + 'px'); }
   }
   root.Wheel = Object.assign(api, { draw: draw });
 })(typeof window !== 'undefined' ? window : this);

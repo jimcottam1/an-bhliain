@@ -3,7 +3,7 @@ const assert = require('node:assert');
 const Festivals = require('../site/festivals.js');
 const Wheel = require('../site/wheel.js');
 const Lore = require('../site/lore.js');
-const lore = require('../data/lore.json');
+const lore = require('../site/data/lore.json');
 
 const iso = (t) => new Date(t).toISOString().slice(0, 10);
 

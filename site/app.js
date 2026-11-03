@@ -66,7 +66,7 @@
     var slider = $('day');
     slider.max = String(pos.length - 1);
     slider.value = String(pos.dayIndex);
-    slider.setAttribute('aria-valuetext', sel.day + ' ' + MONTHS[sel.month - 1] + ' ' + sel.year);
+    slider.setAttribute('aria-valuetext', Wheel.dayLabel(sel.year, sel.month, sel.day));
     $('today').hidden = isToday();
     $('scrub-note').textContent = isToday() ? 'Drag the slider, or tap a season, to explore the year.'
       : 'Showing ' + sel.day + ' ' + MONTHS[sel.month - 1] + ' ' + sel.year + '. The Today button brings you back.';
@@ -101,9 +101,7 @@
     var box = $('lore');
     var hit = Lore.nearest(lore, sel.year, sel.month, sel.day);
     if (!hit) { box.innerHTML = '<h2>Lore</h2><p>No lore cards loaded.</p>'; return; }
-    var e = hit.entry, head;
-    if (hit.offset === 0) head = isToday() ? 'Today in the old year' : 'On this day';
-    else head = 'Nearest card: ' + (hit.offset > 0 ? when(hit.offset) : ago(-hit.offset)) + ' (' + e.day + ' ' + MONTHS[e.month - 1] + ')';
+    var e = hit.entry, head = Lore.describe(hit.offset, isToday(), e, MONTHS);
     var src = e.sources.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
     box.innerHTML =
       '<p class="kicker">' + esc(head) + '</p>' +
@@ -139,6 +137,19 @@
     });
   }
 
+  function renderQuarters() {
+    var ul = $('quarters'), pos = Wheel.yearPosition(sel.year, sel.month, sel.day), cur = Wheel.seasonFor(sel.year, sel.month, sel.day).current;
+    ul.innerHTML = '';
+    Festivals.quarterDays(pos.startYear).forEach(function (q) {
+      var li = document.createElement('li'), b = document.createElement('button');
+      b.type = 'button';
+      if (q.id === cur.id) b.setAttribute('aria-current', 'true');
+      b.innerHTML = '<span class="fn">' + esc(q.name) + '</span><span class="fs">1 ' + MON[q.month - 1] + ' · ' + esc(q.english) + '</span>';
+      b.addEventListener('click', function () { setDate({ year: q.year, month: q.month, day: q.day }); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+  }
+
   function renderCurve() {
     var svg = $('curve'), pos = Wheel.yearPosition(sel.year, sel.month, sel.day);
     var L = 44, R = 590, T = 16, B = 172, vals = [], i, min = 1e9, max = -1e9, minI = 0, maxI = 0;
@@ -169,11 +180,16 @@
   }
 
   function render() {
-    renderWheel(); renderNextFestival(); renderLight(); renderLore(); renderLists(); renderCurve();
+    renderWheel(); renderQuarters(); renderNextFestival(); renderLight(); renderLore(); renderLists(); renderCurve();
   }
 
+  // the lower panels are open on wide screens and folded on phones
+  function setPanels() { ['p-fest', 'p-curve', 'p-up'].forEach(function (id) { var d = $(id); if (mq.matches) d.removeAttribute('open'); else d.setAttribute('open', ''); }); }
+  setPanels();
+  mq.addEventListener ? mq.addEventListener('change', setPanels) : mq.addListener(setPanels);
+
   render();
-  fetch('../data/lore.json').then(function (r) { return r.json(); }).then(function (data) {
+  fetch('data/lore.json').then(function (r) { return r.json(); }).then(function (data) {
     lore = data.entries; render();
   }).catch(function () { $('lore').innerHTML = '<h2>Lore</h2><p>The lore cards could not load.</p>'; });
 })();

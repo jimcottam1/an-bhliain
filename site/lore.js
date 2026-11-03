@@ -29,7 +29,15 @@
     return rows.slice(0, n);
   }
 
-  var api = { nearest: nearest, comingUp: comingUp };
+  // The small heading above a card. when/ago are tiny helpers for wording.
+  function describe(offset, isToday, e, monthNames) {
+    var date = e.day + ' ' + monthNames[e.month - 1];
+    if (offset === 0) return isToday ? 'Today in the old year' : 'On this day';
+    var rel = offset === 1 ? 'tomorrow' : offset === -1 ? 'yesterday' : offset > 0 ? 'in ' + offset + ' days' : (-offset) + ' days ago';
+    return (isToday ? 'Nothing marked for today. ' : 'Nothing marked for this day. ') + 'Nearest card: ' + rel + ' (' + date + ')';
+  }
+
+  var api = { nearest: nearest, comingUp: comingUp, describe: describe };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Lore = api;
 })(typeof window !== 'undefined' ? window : this);

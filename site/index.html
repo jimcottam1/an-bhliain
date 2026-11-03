@@ -24,11 +24,12 @@
     <svg id="wheel" viewBox="0 0 640 640" role="group" aria-label="Wheel of the year. Each season is a button that jumps to its first day."></svg>
     <div class="scrub">
       <button type="button" id="prev" aria-label="Previous day">&larr;</button>
-      <label class="sr" for="day">Pick a day in the old year</label>
-      <input type="range" id="day" min="0" max="364" step="1" value="0">
+      <input type="range" id="day" min="0" max="364" step="1" value="0" aria-label="Day of the old year">
       <button type="button" id="nextday" aria-label="Next day">&rarr;</button>
       <button type="button" id="today" class="todaybtn">Today</button>
     </div>
+    <p class="ends" aria-hidden="true"><span>1 Nov, Samhain</span><span>31 Oct</span></p>
+    <ul id="quarters" class="quarters" aria-label="The four quarter days"></ul>
     <p id="scrub-note" class="caption" aria-live="polite"></p>
   </section>
 
@@ -51,23 +52,27 @@
 </main>
 
 <section class="more">
-  <div class="panel" aria-labelledby="fest-h">
-    <h2 id="fest-h">Key days coming up</h2>
+  <details class="panel" id="p-fest">
+    <summary><h2>Key days coming up</h2></summary>
     <ul id="fest-list" class="festlist"></ul>
-  </div>
-  <div class="panel" aria-labelledby="curve-h">
-    <h2 id="curve-h">Daylight through the old year</h2>
+  </details>
+  <details class="panel" id="p-curve">
+    <summary><h2>Daylight through the old year</h2></summary>
     <svg id="curve" viewBox="0 0 600 200" role="img" aria-label="Chart of day length through the old year"></svg>
     <p id="curve-note" class="caption left"></p>
-  </div>
-  <div class="panel" aria-labelledby="up-h">
-    <h2 id="up-h">Coming up in the lore</h2>
+  </details>
+  <details class="panel" id="p-up">
+    <summary><h2>Coming up in the lore</h2></summary>
     <ul id="up-list" class="festlist"></ul>
-  </div>
+  </details>
 </section>
 
 <footer>
-  <p>Work in progress. Every lore card is a draft awaiting review, and its sources are still to be checked. Sunrise and sunset are worked out on this page from the date and town; nothing is sent anywhere.</p>
+  <details>
+    <summary>How we know</summary>
+    <p>Sunrise and sunset are worked out on this page from the date and town (sun-position formulae, shown in Irish time, so summer time is handled). The solstice and equinox dates come from the U.S. Naval Observatory's published tables. The quarter days are the traditional fixed dates. Nothing is sent anywhere.</p>
+  </details>
+  <p>Work in progress. Every lore card is a draft awaiting review, and its sources are still to be checked.</p>
 </footer>
 <script src="solar.js"></script>
 <script src="irishtime.js"></script>
