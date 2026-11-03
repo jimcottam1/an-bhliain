@@ -1,0 +1,34 @@
+:root{--bg:#0f1a24;--panel:#16242f;--ink:#f1ead9;--muted:#93a1ab;--line:#2b3d4a;--gold:#f2b84b;
+--winter:#3b5f86;--spring:#5f9a6b;--summer:#d9a43a;--autumn:#b4583a;--r:14px;--seasontext:#fff}
+@media (prefers-color-scheme:light){:root{--bg:#f6f0e2;--panel:#fffaf0;--ink:#1d2a33;--muted:#5d6b73;--line:#d9ceb6;--gold:#b97a0c;
+--winter:#3b5f86;--spring:#4f8a5b;--summer:#c8951f;--autumn:#a84a2e;--seasontext:#10202b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,"Times New Roman",serif;padding:0 16px}
+.sr{position:absolute;left:-9999px}
+.top{max-width:1100px;margin:0 auto;padding:28px 0 4px}
+h1{font-size:2.2rem;margin:0;letter-spacing:.02em;font-weight:600}
+.tag{margin:2px 0 0;color:var(--muted);font-style:italic}
+main{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start;padding-bottom:20px}
+.wheel-wrap svg{width:100%;height:auto;display:block}
+.caption{color:var(--muted);font-size:.9rem;text-align:center;margin:0}
+.side{display:grid;gap:16px;padding-top:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.card h2{margin:0 0 6px;font-size:1.25rem}
+.light h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:400}
+.big{font-size:1.6rem;margin:0 0 12px;line-height:1.2;color:var(--gold)}
+.bar{position:relative;height:10px;border-radius:6px;background:var(--line);overflow:hidden}
+.bar span{position:absolute;top:0;bottom:0;background:var(--gold);border-radius:6px}
+.times{display:flex;flex-wrap:wrap;gap:6px 18px;margin:10px 0 0;color:var(--muted);font-size:.95rem}
+.times b{color:var(--ink);font-weight:600}
+.label{margin:0 0 6px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;font:600 .75rem/1 system-ui,sans-serif}
+.kind{padding:5px 9px;border-radius:99px;text-transform:uppercase;letter-spacing:.08em;color:#10202b}
+.kind.fact{background:#8fc1e8}.kind.tradition{background:#e8c477}.kind.saying{background:#b9d9a0}
+.draft{color:var(--muted);font-weight:400}
+.places{color:var(--muted);font-size:.95rem}
+details{margin-top:8px;font-size:.9rem;color:var(--muted)}summary{cursor:pointer}
+.next{text-align:center;color:var(--muted);margin:0}.next b{color:var(--ink)}
+footer{max-width:1100px;margin:0 auto;padding:10px 0 28px;color:var(--muted);font-size:.8rem}
+.seasonlabel{fill:var(--seasontext);font:600 15px Georgia,serif;opacity:.8}.seasonlabel.on{opacity:1;fill:#fff}
+.qlabel text{fill:var(--ink);font:600 20px Georgia,serif}.qlabel .sub{fill:var(--muted);font-weight:400;font-size:15px}
+.c-date{fill:var(--ink);font:600 44px Georgia,serif}.c-season{fill:var(--gold);font:italic 26px Georgia,serif}.c-sub{fill:var(--muted);font:14px Georgia,serif}
+@media (max-width:760px){body{font-size:16px}main{grid-template-columns:1fr;gap:8px}h1{font-size:1.8rem}.top{padding-top:18px}.big{font-size:1.35rem}}

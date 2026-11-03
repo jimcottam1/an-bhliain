@@ -1,0 +1,35 @@
+{
+  "_note": "DRAFT sample for the sketch. Every entry is draft until the owner has reviewed it. Wording is my own. Sources are listed but not yet checked against two independent sources (that happens before launch).",
+  "entries": [
+    {
+      "id": "samhain-quarter-day",
+      "month": 11, "day": 1,
+      "title": "Samhain",
+      "kind": "Fact",
+      "text": "1 November is the old Irish quarter day that opens the winter half of the year. In the old reckoning the year began here, with the darkest months to follow.",
+      "someplacessay": "Some older accounts keep the festival on the evening of 31 October, since the old day was counted from nightfall.",
+      "sources": ["Quarter-day dates in standard Irish calendar references (to be cited properly)"],
+      "status": "draft"
+    },
+    {
+      "id": "all-souls",
+      "month": 11, "day": 2,
+      "title": "Lá na Marbh, All Souls' Day",
+      "kind": "Tradition",
+      "text": "Traditionally this is the day for remembering the dead. Families said prayers and many parishes read out the names of the departed.",
+      "someplacessay": "Customs differ by parish. In some places the dead were also remembered on the night before.",
+      "sources": ["Church calendar date (2 November)", "Folklore overviews of Irish November customs (to be cited properly)"],
+      "status": "draft"
+    },
+    {
+      "id": "season-geimhreadh",
+      "season": "Geimhreadh",
+      "title": "An Geimhreadh, winter",
+      "kind": "Saying",
+      "text": "Irish gives the four seasons their own names, and the old year counts winter from Samhain: Geimhreadh, then Earrach, Samhradh and Fómhar.",
+      "someplacessay": "Weather forecasters count winter from 1 December instead. Both are in use.",
+      "sources": ["Irish dictionary entries for the season names (to be cited properly)"],
+      "status": "draft"
+    }
+  ]
+}
