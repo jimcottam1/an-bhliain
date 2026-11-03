@@ -9,35 +9,71 @@
 </head>
 <body>
 <header class="top">
-  <h1>An Bhliain</h1>
-  <p class="tag">The old Irish year, today</p>
+  <div>
+    <h1>An Bhliain</h1>
+    <p class="tag">The old Irish year</p>
+  </div>
+  <label class="town">Light for
+    <select id="town" aria-label="Choose a town for sunrise and sunset"></select>
+  </label>
 </header>
 
 <main>
   <section class="wheel-wrap" aria-labelledby="wheel-title">
     <h2 id="wheel-title" class="sr">The wheel of the year</h2>
-    <svg id="wheel" viewBox="-70 24 780 596" role="img" aria-label="Wheel of the year"></svg>
-    <p id="wheel-caption" class="caption"></p>
+    <svg id="wheel" viewBox="0 0 640 640" role="group" aria-label="Wheel of the year. Each season is a button that jumps to its first day."></svg>
+    <div class="scrub">
+      <button type="button" id="prev" aria-label="Previous day">&larr;</button>
+      <label class="sr" for="day">Pick a day in the old year</label>
+      <input type="range" id="day" min="0" max="364" step="1" value="0">
+      <button type="button" id="nextday" aria-label="Next day">&rarr;</button>
+      <button type="button" id="today" class="todaybtn">Today</button>
+    </div>
+    <p id="scrub-note" class="caption" aria-live="polite"></p>
   </section>
 
   <section class="side">
+    <article class="card nextfest" aria-live="polite">
+      <p class="kicker">Next key day</p>
+      <p class="bigname" id="nf-name"></p>
+      <p class="count" id="nf-count"></p>
+    </article>
+
     <article class="card light" aria-labelledby="light-h">
-      <h2 id="light-h">Light in Limerick</h2>
+      <h2 id="light-h" class="kicker">Light in <span id="light-town">Limerick</span></h2>
       <p class="big" id="light-change">&nbsp;</p>
       <div class="bar" aria-hidden="true"><span id="bar-day"></span></div>
       <p class="times"><span>Sunrise <b id="rise">--:--</b></span><span>Sunset <b id="set">--:--</b></span><span>Day <b id="len">--</b></span></p>
     </article>
 
     <article class="card lore" id="lore" aria-live="polite"></article>
-
-    <p class="next" id="next"></p>
   </section>
 </main>
 
+<section class="more">
+  <div class="panel" aria-labelledby="fest-h">
+    <h2 id="fest-h">Key days coming up</h2>
+    <ul id="fest-list" class="festlist"></ul>
+  </div>
+  <div class="panel" aria-labelledby="curve-h">
+    <h2 id="curve-h">Daylight through the old year</h2>
+    <svg id="curve" viewBox="0 0 600 200" role="img" aria-label="Chart of day length through the old year"></svg>
+    <p id="curve-note" class="caption left"></p>
+  </div>
+  <div class="panel" aria-labelledby="up-h">
+    <h2 id="up-h">Coming up in the lore</h2>
+    <ul id="up-list" class="festlist"></ul>
+  </div>
+</section>
+
 <footer>
-  <p>Sketch. Every lore card is a draft awaiting review. Sunrise and sunset are worked out on this page from the date; no data is sent anywhere.</p>
+  <p>Work in progress. Every lore card is a draft awaiting review, and its sources are still to be checked. Sunrise and sunset are worked out on this page from the date and town; nothing is sent anywhere.</p>
 </footer>
 <script src="solar.js"></script>
+<script src="irishtime.js"></script>
+<script src="festivals.js"></script>
+<script src="lore.js"></script>
+<script src="towns.js"></script>
 <script src="wheel.js"></script>
 <script src="app.js"></script>
 </body>

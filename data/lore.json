@@ -1,35 +1,194 @@
 {
-  "_note": "DRAFT sample for the sketch. Every entry is draft until the owner has reviewed it. Wording is my own. Sources are listed but not yet checked against two independent sources (that happens before launch).",
+  "_note": "DRAFT launch set. Every entry is draft until the owner has reviewed it. Wording is my own. The sources listed are references to consult: none has yet been checked against two independent sources (sourcesChecked is false until that is done). Labels: Fact = a checkable date or event; Tradition = a custom reported in Ireland; Saying = a proverb, not tied to the date it sits on.",
   "entries": [
     {
-      "id": "samhain-quarter-day",
-      "month": 11, "day": 1,
-      "title": "Samhain",
-      "kind": "Fact",
+      "id": "halloween", "month": 10, "day": 31, "title": "Oíche Shamhna, Hallowe'en", "kind": "Tradition",
+      "text": "Traditionally this was a night for fires, games and fortune-telling, and for a barmbrack with small objects baked into it. Hollowed-out turnips were the lanterns before pumpkins arrived.",
+      "someplacessay": "The foods, games and even the name of the night differ from county to county.",
+      "sources": ["Irish folklore overviews of Hallowe'en customs (to check)", "A national museum or heritage-council page on Samhain customs (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "samhain", "month": 11, "day": 1, "title": "Samhain", "kind": "Fact",
       "text": "1 November is the old Irish quarter day that opens the winter half of the year. In the old reckoning the year began here, with the darkest months to follow.",
       "someplacessay": "Some older accounts keep the festival on the evening of 31 October, since the old day was counted from nightfall.",
-      "sources": ["Quarter-day dates in standard Irish calendar references (to be cited properly)"],
-      "status": "draft"
+      "sources": ["Quarter-day dates in standard Irish calendar references (to check)", "An Irish-language dictionary entry for Samhain (to check)"],
+      "status": "draft", "sourcesChecked": false
     },
     {
-      "id": "all-souls",
-      "month": 11, "day": 2,
-      "title": "Lá na Marbh, All Souls' Day",
-      "kind": "Tradition",
-      "text": "Traditionally this is the day for remembering the dead. Families said prayers and many parishes read out the names of the departed.",
+      "id": "all-souls", "month": 11, "day": 2, "title": "Lá na Marbh, All Souls' Day", "kind": "Tradition",
+      "text": "Traditionally this is the day for remembering the dead. Families said prayers, and many parishes read out the names of the departed through November.",
       "someplacessay": "Customs differ by parish. In some places the dead were also remembered on the night before.",
-      "sources": ["Church calendar date (2 November)", "Folklore overviews of Irish November customs (to be cited properly)"],
-      "status": "draft"
+      "sources": ["Church calendar date, 2 November (to check)", "Folklore overviews of Irish November customs (to check)"],
+      "status": "draft", "sourcesChecked": false
     },
     {
-      "id": "season-geimhreadh",
-      "season": "Geimhreadh",
-      "title": "An Geimhreadh, winter",
-      "kind": "Saying",
-      "text": "Irish gives the four seasons their own names, and the old year counts winter from Samhain: Geimhreadh, then Earrach, Samhradh and Fómhar.",
-      "someplacessay": "Weather forecasters count winter from 1 December instead. Both are in use.",
-      "sources": ["Irish dictionary entries for the season names (to be cited properly)"],
-      "status": "draft"
+      "id": "hearth", "month": 11, "day": 4, "title": "Níl aon tinteán mar do thinteán féin", "kind": "Saying",
+      "text": "A well-known proverb: there is no hearth like your own hearth. It suits these early dark evenings, when the fire is the centre of the house. It is not tied to this date.",
+      "someplacessay": "The wording varies a little from place to place.",
+      "sources": ["An Irish proverbs collection (to check)", "An English-Irish dictionary entry for tinteán (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "martinmas", "month": 11, "day": 10, "title": "Oíche Fhéile Mártain, St Martin's Eve", "kind": "Tradition",
+      "text": "In some districts an animal was traditionally killed for the feast of St Martin, and a little of the blood was sprinkled at the door. Many people also avoided certain work, such as spinning, on the night.",
+      "someplacessay": "The custom was strongest in parts of the south and east, and it varied by household.",
+      "sources": ["Folklore studies of Irish saints' day customs (to check)", "A heritage or folklore archive summary of St Martin's Eve (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "immaculate-conception", "month": 12, "day": 8, "title": "The Feast of the Immaculate Conception", "kind": "Tradition",
+      "text": "For generations, country people travelled to the nearest town on 8 December for Christmas shopping, and the day is still known as the start of the big Christmas shop in some places.",
+      "someplacessay": "It is a church holy day, and some people count it as the real start of Christmas, others do not.",
+      "sources": ["Church calendar date, 8 December (to check)", "Irish social-history or newspaper features on the Christmas shopping day (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "winter-solstice", "month": 12, "day": 21, "title": "Grianstad an Gheimhridh, winter solstice", "kind": "Fact",
+      "text": "The shortest day of the year. At Newgrange in County Meath, the rising sun lights the inner chamber of the passage tomb around this time.",
+      "someplacessay": "The light enters the chamber for several days around the solstice, not only on the 21st.",
+      "sources": ["Office of Public Works or Heritage Ireland page on Newgrange (to check)", "An almanac for the exact solstice date (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "christmas-eve", "month": 12, "day": 24, "title": "Oíche Nollag, Christmas Eve", "kind": "Tradition",
+      "text": "Traditionally a candle is lit in the window on Christmas Eve, to welcome anyone who is looking for shelter.",
+      "someplacessay": "In some homes the youngest child lights it; in others it is left to someone with a particular name, or to the head of the house.",
+      "sources": ["Irish Christmas custom articles from a national broadcaster or newspaper (to check)", "A folklore archive entry on the Christmas candle (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "hospitality", "month": 12, "day": 25, "title": "Ar scáth a chéile a mhaireann na daoine", "kind": "Saying",
+      "text": "A well-loved proverb, often translated as people live in each other's shelter. It fits Christmas Day, when many people open their doors to others. It is not tied to this date.",
+      "someplacessay": "People translate it in different ways, such as 'we live in each other's shadow' or 'in each other's shelter'.",
+      "sources": ["An Irish proverbs collection (to check)", "An English-Irish dictionary entry for scáth (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "wren-day", "month": 12, "day": 26, "title": "Lá an Dreoilín, St Stephen's Day", "kind": "Tradition",
+      "text": "Traditionally, groups of wren boys went from house to house on St Stephen's Day in straw costumes and masks, playing music and collecting money. The custom is still marked in places such as Dingle.",
+      "someplacessay": "The dress, the songs and the way the day is kept differ from town to town.",
+      "sources": ["Folklore archive entries on the Wren Boys (to check)", "A Kerry or Dingle local-history source on Wren Day (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "nollaig-na-mban", "month": 1, "day": 6, "title": "Nollaig na mBan, Women's Christmas", "kind": "Tradition",
+      "text": "Traditionally the women of the house rested on 6 January while the men took over the work, after a busy Christmas. Today friends often meet for a meal or a drink.",
+      "someplacessay": "It is called Little Christmas in many places, and it is kept most strongly in Cork and Kerry.",
+      "sources": ["A national broadcaster or newspaper feature on Nollaig na mBan (to check)", "A folklore archive entry on Little Christmas (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "brigid-eve", "month": 1, "day": 31, "title": "Oíche Fhéile Bríde, St Brigid's Eve", "kind": "Tradition",
+      "text": "Traditionally rushes were gathered on the eve of St Brigid's Day and woven into a cross, which was hung in the house for protection through the year.",
+      "someplacessay": "The design of the cross varies: some have three arms, some four, and the weave differs by region.",
+      "sources": ["A heritage or museum page on the St Brigid's cross (to check)", "A folklore archive entry on Brigid's Eve customs (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "imbolc", "month": 2, "day": 1, "title": "Imbolc, Lá Fhéile Bríde", "kind": "Fact",
+      "text": "1 February is Imbolc, the old quarter day that marks the start of spring, and also the feast of St Brigid. It became a public holiday in 2023, on the first Monday of February, or on 1 February itself when that falls on a Friday.",
+      "someplacessay": "Some say Imbolc and St Brigid's Day were once separate celebrations that grew together.",
+      "sources": ["Irish Statute Book, Public Holidays (St Brigid's Day) Act 2022 (to check)", "A quarter-day reference or Irish-language dictionary entry for Imbolc (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "candlemas", "month": 2, "day": 2, "title": "Candlemas", "kind": "Fact",
+      "text": "2 February is Candlemas in the church calendar, forty days after Christmas, when candles are blessed for the year ahead.",
+      "someplacessay": "Some places keep their Christmas decorations up until this day.",
+      "sources": ["Church calendar date, 2 February (to check)", "A diocesan or parish page on Candlemas (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "st-blaise", "month": 2, "day": 3, "title": "St Blaise's Day", "kind": "Tradition",
+      "text": "In many parishes, people have their throats blessed on 3 February with two candles held crossed under the chin, a custom to protect against throat illness.",
+      "someplacessay": "Some parishes hold the blessing on the nearest Sunday instead.",
+      "sources": ["A diocesan or parish page on the Blessing of Throats (to check)", "Church calendar date, 3 February (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "patrick", "month": 3, "day": 17, "title": "Lá Fhéile Pádraig, St Patrick's Day", "kind": "Tradition",
+      "text": "A national feast day and public holiday. People traditionally wore a small bunch of shamrock or a paper cross on their coat.",
+      "someplacessay": "The big parades are a fairly modern addition; older custom was church in the morning and a quiet day.",
+      "sources": ["Irish government or tourism page on St Patrick's Day (to check)", "A history feature on the origins of the parades (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "spring-equinox", "month": 3, "day": 20, "title": "Cónocht an Earraigh, spring equinox", "kind": "Fact",
+      "text": "Day and night are close to equal length, and from here the days run longer than the nights until the autumn equinox.",
+      "someplacessay": "The exact moment falls on 20 or 21 March, depending on the year.",
+      "sources": ["An astronomical almanac for the exact date (to check)", "Met Éireann or Armagh Observatory page on the equinoxes (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "lady-day", "month": 3, "day": 25, "title": "Lady Day", "kind": "Fact",
+      "text": "25 March, the feast of the Annunciation, was one of the traditional quarter days for paying rents and settling accounts.",
+      "someplacessay": "Quarter days differed between regions and between legal and farming use.",
+      "sources": ["A legal or history reference on the English and Irish quarter days (to check)", "Church calendar date, 25 March (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "bealtaine", "month": 5, "day": 1, "title": "Bealtaine, May Day", "kind": "Tradition",
+      "text": "Traditionally a May bush was decorated and set up near the house, yellow flowers such as primroses were laid on doorsteps, and fires were lit to protect people and animals as summer began.",
+      "someplacessay": "Some places keep the old May Day on 12 May, and the flowers and customs vary by district.",
+      "sources": ["A folklore archive or national museum page on May Day customs (to check)", "An Irish-language dictionary entry for Bealtaine (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "summer-solstice", "month": 6, "day": 21, "title": "Grianstad an tSamhraidh, summer solstice", "kind": "Fact",
+      "text": "The longest day of the year. In most of Ireland there are around 17 hours of daylight, with true darkness hardly arriving in the far north.",
+      "someplacessay": "The solstice falls on 20 or 21 June, depending on the year.",
+      "sources": ["An astronomical almanac for the exact date (to check)", "Met Éireann or Armagh Observatory page on the solstices (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "st-johns-eve", "month": 6, "day": 23, "title": "Oíche Fhéile Eoin, St John's Eve", "kind": "Tradition",
+      "text": "On the eve of St John's Day, bonfires are traditionally lit, a custom still kept in parts of the south and west of Ireland.",
+      "someplacessay": "In some places people once drove cattle past the embers, and the fires are still strongest in certain parishes.",
+      "sources": ["A folklore archive entry on St John's Eve bonfires (to check)", "A local-history source from a county that keeps the custom (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "lughnasa", "month": 8, "day": 1, "title": "Lúnasa, Lughnasa", "kind": "Fact",
+      "text": "1 August is Lughnasa, the old quarter day that opens the harvest season. The Irish name for the month of August, Lúnasa, comes from it, and Brian Friel's play Dancing at Lughnasa takes its name from the festival.",
+      "someplacessay": "Gatherings on hilltops around this time of year were traditionally common, and the exact day kept differs by place.",
+      "sources": ["An Irish-language dictionary entry for Lúnasa (to check)", "A published listing for Dancing at Lughnasa (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "puck-fair", "month": 8, "day": 10, "title": "Puck Fair opens", "kind": "Tradition",
+      "text": "Each year, from 10 to 12 August, Killorglin in County Kerry holds Puck Fair, in which a wild mountain goat is crowned King Puck and raised above the town.",
+      "someplacessay": "People tell different stories about how the custom began.",
+      "sources": ["The Puck Fair official site (to check)", "A Kerry tourism or heritage page on Puck Fair (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "assumption", "month": 8, "day": 15, "title": "Lá Fhéile Muire sa Fhómhar, Assumption", "kind": "Tradition",
+      "text": "The feast of the Assumption on 15 August is a holy day, and it was a traditional day for pilgrimages and for visiting holy wells.",
+      "someplacessay": "Different places keep their own pattern day, and some on dates around it.",
+      "sources": ["Church calendar date, 15 August (to check)", "A heritage page on holy wells and pattern days (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "autumn-equinox", "month": 9, "day": 23, "title": "Cónocht an Fhómhair, autumn equinox", "kind": "Fact",
+      "text": "Day and night are close to equal again, and from here the nights run longer than the days until the spring equinox.",
+      "someplacessay": "The exact moment falls on 22 or 23 September, depending on the year.",
+      "sources": ["An astronomical almanac for the exact date (to check)", "Met Éireann or Armagh Observatory page on the equinoxes (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "michaelmas", "month": 9, "day": 29, "title": "Michaelmas", "kind": "Tradition",
+      "text": "The feast of St Michael, 29 September, was traditionally marked with a goose dinner. A well-known saying warned against picking blackberries after this date.",
+      "someplacessay": "Some places say the blackberries are spoiled after Michaelmas, others say after Hallowe'en.",
+      "sources": ["Folklore archive entries on Michaelmas customs (to check)", "Church calendar date, 29 September (to check)"],
+      "status": "draft", "sourcesChecked": false
+    },
+    {
+      "id": "new-year", "month": 1, "day": 1, "title": "Is fearr an tsláinte ná na táinte", "kind": "Saying",
+      "text": "A familiar proverb: health is better than wealth. It is often said at New Year, when people wish each other well. It is not tied to this date.",
+      "someplacessay": "People pronounce and write it in a few ways across different regions.",
+      "sources": ["An Irish proverbs collection (to check)", "An English-Irish dictionary entry for sláinte (to check)"],
+      "status": "draft", "sourcesChecked": false
     }
   ]
 }
