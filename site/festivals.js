@@ -15,17 +15,22 @@
     autumnEquinox: { name: 'Cónocht an Fhómhair', english: 'autumn equinox' },
     winterSolstice: { name: 'Grianstad an Gheimhridh', english: 'winter solstice' }
   };
-  // [month, day] in Ireland, 2026 to 2030. Source: U.S. Naval Observatory, Astronomical
-  // Applications Department, https://aa.usno.navy.mil/api/seasons?year=YYYY (fetched 3 Nov 2026,
-  // times in UTC), converted to the Irish date (summer time included). The saved copy is
-  // test/fixtures/usno-seasons.json and a test keeps this table in step with it.
-  // Extend it (and the fixture) before 2031.
+  // [month, day] in Ireland, 2026 to 2035. Source: U.S. Naval Observatory, Astronomical
+  // Applications Department, https://aa.usno.navy.mil/api/seasons?year=YYYY (fetched 3 Nov 2026 for
+  // 2026 to 2030 and 4 Nov 2026 for 2031 to 2035; times in UTC), converted to the Irish date (summer
+  // time included). The saved copy is test/fixtures/usno-seasons.json and a test keeps this table
+  // in step with it. Extend both (and the test) before 2036.
   var ASTRO = {
     2026: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 21] },
     2027: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 22] },
     2028: { springEquinox: [3, 20], summerSolstice: [6, 20], autumnEquinox: [9, 22], winterSolstice: [12, 21] },
     2029: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 22], winterSolstice: [12, 21] },
-    2030: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 21] }
+    2030: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 21] },
+    2031: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 22] },
+    2032: { springEquinox: [3, 20], summerSolstice: [6, 20], autumnEquinox: [9, 22], winterSolstice: [12, 21] },
+    2033: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 22], winterSolstice: [12, 21] },
+    2034: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 22], winterSolstice: [12, 21] },
+    2035: { springEquinox: [3, 20], summerSolstice: [6, 21], autumnEquinox: [9, 23], winterSolstice: [12, 22] }
   };
 
   function utc(y, m, d) { return Date.UTC(y, m - 1, d); }

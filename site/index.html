@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>An Bhliain</title>
 <meta name="description" content="The old Irish year as a living wheel: where we are between Samhain, Imbolc, Bealtaine and Lughnasa, and how much light there is today.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="An Bhliain">
+<meta property="og:description" content="The old Irish year as a living wheel: where we are between Samhain, Imbolc, Bealtaine and Lughnasa, how much daylight there is, and the next key day.">
+<meta property="og:image" content="https://jimcottam1.github.io/an-bhliain/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The wheel of the old Irish year in four coloured seasons, with Samhain at the top, beside the title An Bhliain.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,6 +48,12 @@
       <p class="count" id="nf-count"></p>
     </article>
 
+    <div class="sharerow">
+      <button type="button" id="share" class="sharebtn">Share this day</button>
+      <p id="share-msg" class="sharemsg" aria-live="polite"></p>
+      <textarea id="share-box" class="sharebox" rows="3" readonly hidden aria-label="Text to copy and share"></textarea>
+    </div>
+
     <article class="card light" aria-labelledby="light-h">
       <h2 id="light-h" class="kicker">Light in <span id="light-town">Limerick</span></h2>
       <p class="big" id="light-change">&nbsp;</p>
@@ -72,13 +86,14 @@
     <summary>How we know</summary>
     <p>Sunrise and sunset are worked out on this page from the date and town (sun-position formulae, shown in Irish time, so summer time is handled). The solstice and equinox dates come from the U.S. Naval Observatory's published tables. The quarter days are the traditional fixed dates. Nothing is sent anywhere.</p>
   </details>
-  <p>Work in progress. Every lore card is a draft awaiting review, and its sources are still to be checked.</p>
+  <p>Every lore card is a draft and is still being checked against its sources, so the wording is not final yet.</p>
 </footer>
 <script src="solar.js"></script>
 <script src="irishtime.js"></script>
 <script src="festivals.js"></script>
 <script src="lore.js"></script>
 <script src="towns.js"></script>
+<script src="share.js"></script>
 <script src="wheel.js"></script>
 <script src="app.js"></script>
 </body>

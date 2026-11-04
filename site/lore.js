@@ -37,7 +37,27 @@
     return (isToday ? 'Nothing marked for today. ' : 'Nothing marked for this day. ') + 'Nearest card: ' + rel + ' (' + date + ')';
   }
 
-  var api = { nearest: nearest, comingUp: comingUp, describe: describe };
+  // One short, kind line for a card that is still a draft; nothing for an approved card.
+  function draftNote(entry) {
+    return entry && entry.status === 'draft' ? 'We are still checking this card against its sources, so it may change.' : '';
+  }
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  // The HTML of a lore card. Everything that comes from the data is escaped.
+  function cardHtml(e, head) {
+    var src = e.sources.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
+    var note = draftNote(e);
+    return '<p class="kicker">' + esc(head) + '</p>' +
+      '<p class="label"><span class="kind ' + esc(String(e.kind).toLowerCase()) + '">' + esc(e.kind) + '</span>' +
+      (e.status === 'draft' ? '<span class="draft">Draft</span>' : '') + '</p>' +
+      '<h2>' + esc(e.title) + '</h2><p>' + esc(e.text) + '</p>' +
+      '<p class="places"><b>Some places say:</b> ' + esc(e.someplacessay) + '</p>' +
+      (note ? '<p class="draftnote">' + esc(note) + '</p>' : '') +
+      '<details><summary>Sources' + (e.sourcesChecked ? '' : ' (not yet checked)') + '</summary><ul>' + src + '</ul></details>';
+  }
+
+  var api = { nearest: nearest, comingUp: comingUp, describe: describe, draftNote: draftNote, cardHtml: cardHtml };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Lore = api;
 })(typeof window !== 'undefined' ? window : this);

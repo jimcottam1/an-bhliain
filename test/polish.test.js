@@ -10,7 +10,7 @@ const Lore = require('../site/lore.js');
 const usno = require('./fixtures/usno-seasons.json');
 const KEYS = { 3: 'springEquinox', 6: 'summerSolstice', 9: 'autumnEquinox', 12: 'winterSolstice' };
 
-test('the solstice and equinox table matches the U.S. Naval Observatory data (UTC converted to the Irish date) for 2026 to 2030', () => {
+test('the solstice and equinox table matches the U.S. Naval Observatory data (UTC converted to the Irish date) for 2026 to 2035', () => {
   for (const [year, rows] of Object.entries(usno.years)) {
     assert.strictEqual(rows.length, 4, year);
     for (const r of rows) {
@@ -107,4 +107,27 @@ test('lore data has grown carefully: at least 30 entries, all draft, unchecked, 
     const k = e.month + '-' + e.day;
     assert.ok(!days.has(k), 'two cards share a date: ' + k); days.add(k);
   }
+});
+
+test('the table spans 2026 to 2035 and the fixture records when each batch was fetched', () => {
+  const years = Object.keys(Festivals.ASTRO).map(Number).sort((a, b) => a - b);
+  assert.strictEqual(years[0], 2026);
+  assert.strictEqual(years[years.length - 1], 2035);
+  assert.strictEqual(years.length, 10);
+  assert.match(usno.fetched, /2026-11-03/);
+  assert.match(usno.fetched, /2026-11-04/);
+});
+
+test('two awkward Irish dates: the 2031 and 2035 winter solstices fall on 22 December', () => {
+  assert.deepStrictEqual(Festivals.ASTRO[2031].winterSolstice, [12, 22]);
+  assert.deepStrictEqual(Festivals.ASTRO[2035].winterSolstice, [12, 22]);
+  assert.deepStrictEqual(Festivals.ASTRO[2034].autumnEquinox, [9, 22]); // 22:39 UTC is 23:39 in summer time, still the 22nd
+});
+
+test('the countdown reaches the 2035 solstice from late 2034', () => {
+  const n = Festivals.next(2034, 12, 22);
+  assert.strictEqual(n.festival.key, 'imbolc');
+  const m = Festivals.next(2035, 11, 3);
+  assert.strictEqual(m.festival.key, 'winterSolstice');
+  assert.strictEqual(m.days, 49);
 });

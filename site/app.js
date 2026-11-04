@@ -102,14 +102,7 @@
     var hit = Lore.nearest(lore, sel.year, sel.month, sel.day);
     if (!hit) { box.innerHTML = '<h2>Lore</h2><p>No lore cards loaded.</p>'; return; }
     var e = hit.entry, head = Lore.describe(hit.offset, isToday(), e, MONTHS);
-    var src = e.sources.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('');
-    box.innerHTML =
-      '<p class="kicker">' + esc(head) + '</p>' +
-      '<p class="label"><span class="kind ' + esc(e.kind.toLowerCase()) + '">' + esc(e.kind) + '</span>' +
-      (e.status === 'draft' ? '<span class="draft">Draft, awaiting review</span>' : '') + '</p>' +
-      '<h2>' + esc(e.title) + '</h2><p>' + esc(e.text) + '</p>' +
-      '<p class="places"><b>Some places say:</b> ' + esc(e.someplacessay) + '</p>' +
-      '<details><summary>Sources' + (e.sourcesChecked ? '' : ' (not yet checked)') + '</summary><ul>' + src + '</ul></details>';
+    box.innerHTML = Lore.cardHtml(e, head);
   }
 
   function jumpButton(label, sub, o) {
@@ -179,7 +172,25 @@
     $('curve-note').textContent = town.name + ': from ' + dur(min * 60) + ' on the shortest day to ' + dur(max * 60) + ' on the longest.';
   }
 
+  // ----- sharing -----
+  function clearShare() { $('share-msg').textContent = ''; $('share-box').hidden = true; }
+  $('share').addEventListener('click', function () {
+    var link = Share.link(location, sel, today);
+    var payload = { title: 'An Bhliain', text: Share.line(sel, town), url: link };
+    Share.deliver(navigator, payload).then(function (how) {
+      if (how === 'clipboard') $('share-msg').textContent = 'Copied. Paste it wherever you like.';
+      else if (how === 'box') {
+        var box = $('share-box');
+        box.value = link ? payload.text + '\n' + link : payload.text;
+        box.hidden = false;
+        $('share-msg').textContent = 'Copy this text to share it.';
+        box.focus(); box.select();
+      }
+    });
+  });
+
   function render() {
+    clearShare();
     renderWheel(); renderQuarters(); renderNextFestival(); renderLight(); renderLore(); renderLists(); renderCurve();
   }
 

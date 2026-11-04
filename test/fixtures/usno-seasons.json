@@ -1,6 +1,6 @@
 {
  "source": "U.S. Naval Observatory, Astronomical Applications Department, https://aa.usno.navy.mil/api/seasons?year=YYYY",
- "fetched": "2026-11-03",
+ "fetched": "2026-11-03 for 2026 to 2030; 2026-11-04 for 2031 to 2035",
  "timesAreUTC": true,
  "years": {
   "2026": [
@@ -130,6 +130,136 @@
     "month": 12,
     "day": 21,
     "time": "20:09",
+    "phenom": "Solstice"
+   }
+  ],
+  "2031": [
+   {
+    "month": 3,
+    "day": 20,
+    "time": "19:41",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 6,
+    "day": 21,
+    "time": "13:17",
+    "phenom": "Solstice"
+   },
+   {
+    "month": 9,
+    "day": 23,
+    "time": "05:15",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 12,
+    "day": 22,
+    "time": "01:55",
+    "phenom": "Solstice"
+   }
+  ],
+  "2032": [
+   {
+    "month": 3,
+    "day": 20,
+    "time": "01:22",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 6,
+    "day": 20,
+    "time": "19:09",
+    "phenom": "Solstice"
+   },
+   {
+    "month": 9,
+    "day": 22,
+    "time": "11:11",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 12,
+    "day": 21,
+    "time": "07:56",
+    "phenom": "Solstice"
+   }
+  ],
+  "2033": [
+   {
+    "month": 3,
+    "day": 20,
+    "time": "07:22",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 6,
+    "day": 21,
+    "time": "01:01",
+    "phenom": "Solstice"
+   },
+   {
+    "month": 9,
+    "day": 22,
+    "time": "16:51",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 12,
+    "day": 21,
+    "time": "13:46",
+    "phenom": "Solstice"
+   }
+  ],
+  "2034": [
+   {
+    "month": 3,
+    "day": 20,
+    "time": "13:17",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 6,
+    "day": 21,
+    "time": "06:44",
+    "phenom": "Solstice"
+   },
+   {
+    "month": 9,
+    "day": 22,
+    "time": "22:39",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 12,
+    "day": 21,
+    "time": "19:34",
+    "phenom": "Solstice"
+   }
+  ],
+  "2035": [
+   {
+    "month": 3,
+    "day": 20,
+    "time": "19:02",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 6,
+    "day": 21,
+    "time": "12:33",
+    "phenom": "Solstice"
+   },
+   {
+    "month": 9,
+    "day": 23,
+    "time": "04:39",
+    "phenom": "Equinox"
+   },
+   {
+    "month": 12,
+    "day": 22,
+    "time": "01:31",
     "phenom": "Solstice"
    }
   ]
