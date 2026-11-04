@@ -38,8 +38,18 @@
   }
 
   // One short, kind line for a card that is still a draft; nothing for an approved card.
+  // The note depends on whether the sources are checked yet.
   function draftNote(entry) {
-    return entry && entry.status === 'draft' ? 'We are still checking this card against its sources, so it may change.' : '';
+    if (!entry || entry.status !== 'draft') return '';
+    return entry.sourcesChecked ? 'Sources checked; wording awaiting final review.' : 'We are still checking this card against its sources, so it may change.';
+  }
+
+  // The footer line about the lore as a whole.
+  function footerNote(entries) {
+    var drafts = (entries || []).filter(function (e) { return e.status === 'draft'; });
+    if (!drafts.length) return '';
+    if (drafts.some(function (e) { return !e.sourcesChecked; })) return 'Lore cards are drafts. We are still checking some against their sources, so the wording is not final yet.';
+    return 'Lore cards are drafts. Their sources are checked, and the wording awaits final review.';
   }
 
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -57,7 +67,7 @@
       '<details><summary>Sources' + (e.sourcesChecked ? '' : ' (not yet checked)') + '</summary><ul>' + src + '</ul></details>';
   }
 
-  var api = { nearest: nearest, comingUp: comingUp, describe: describe, draftNote: draftNote, cardHtml: cardHtml };
+  var api = { nearest: nearest, comingUp: comingUp, describe: describe, draftNote: draftNote, footerNote: footerNote, cardHtml: cardHtml };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.Lore = api;
 })(typeof window !== 'undefined' ? window : this);

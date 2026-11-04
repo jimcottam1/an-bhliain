@@ -174,10 +174,10 @@ test('card text from the data is escaped on the page', () => {
   assert.ok(h.includes('&lt;img') && h.includes('a &amp; b &quot;q&quot;'));
 });
 
-test('the app builds the card with Lore.cardHtml, and the footer says the lore is still being checked', () => {
+test('the app builds the card with Lore.cardHtml, and the footer says the lore is still being checked (wording follows the data)', () => {
   const app = fs.readFileSync(path.join(SITE, 'app.js'), 'utf8');
   assert.ok(app.includes('Lore.cardHtml(e, head)'));
-  assert.match(html, /still being checked/);
+  assert.match(html, /still checking some against their sources/);
 });
 
 test('every script the page loads is valid JavaScript (a stray newline in a string once broke app.js)', () => {

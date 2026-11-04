@@ -9,12 +9,10 @@
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
 
   // ----- state -----
-  function realToday() {
-    var m = /[?&]date=(\d{4})-(\d{2})-(\d{2})/.exec(location.search); // handy for previews and tests
-    return m ? { year: +m[1], month: +m[2], day: +m[3] } : IrishTime.dateParts(new Date());
-  }
-  var today = realToday();
-  var sel = { year: today.year, month: today.month, day: today.day };
+  // The real Irish today is kept apart from the day the page opens on (?date=, when it is good).
+  var start = IrishTime.startDate(location.search, new Date());
+  var today = start.today;
+  var sel = { year: start.start.year, month: start.start.month, day: start.start.day };
   var town = TOWNS[0];
   var saved = store('anbhliain-town');
   TOWNS.forEach(function (t) { if (t.id === saved) town = t; });
@@ -201,6 +199,8 @@
 
   render();
   fetch('data/lore.json').then(function (r) { return r.json(); }).then(function (data) {
-    lore = data.entries; render();
+    lore = data.entries;
+    var ln = $('lorenote'); if (ln) { var t = Lore.footerNote(lore); ln.textContent = t; ln.hidden = !t; }
+    render();
   }).catch(function () { $('lore').innerHTML = '<h2>Lore</h2><p>The lore cards could not load.</p>'; });
 })();
