@@ -103,7 +103,7 @@ test('lore data has grown carefully: at least 30 entries, all draft, unchecked, 
   for (const e of lore.entries) {
     assert.strictEqual(e.status, 'draft');
     assert.strictEqual(typeof e.sourcesChecked, 'boolean');
-    assert.ok(e.sources.length >= 2);
+    assert.ok(e.sources.length >= (e.sourcesChecked ? 2 : 1));
     const k = e.month + '-' + e.day;
     assert.ok(!days.has(k), 'two cards share a date: ' + k); days.add(k);
   }
