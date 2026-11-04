@@ -161,11 +161,13 @@
       "text": "Traditionally, groups of wren boys went from house to house on St Stephen's Day in straw costumes and masks, playing music and collecting money. The custom is still marked in places such as Dingle.",
       "someplacessay": "The dress, the songs and the way the day is kept differ from town to town.",
       "sources": [
-        "Folklore archive entries on the Wren Boys (to check)",
-        "A Kerry or Dingle local-history source on Wren Day (to check)"
+        "RTÉ Archives, 'Lá an Dreoilín' (Wren Day in Dingle), 17 Dec 2021, https://www.rte.ie/archives/2021/1217/1267299-la-an-dreolin, checked 2026-11-03",
+        "Anne Lucey, 'Wren Day: Those that went before us kept it going from generation to generation', The Irish Times, 27 Dec 2023, https://www.irishtimes.com/ireland/2023/12/27/those-that-went-before-us-kept-it-going-from-generation-to-generation, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "supported",
+      "checkNote": "Wording kept. Both sources: wren hunted and paraded on St Stephen's Day, groups in straw costumes or masks going to houses with music and collecting money; Dingle still keeps it, with four groups. The Irish Times notes it has died out in most other places."
     },
     {
       "id": "nollaig-na-mban",
@@ -173,14 +175,16 @@
       "day": 6,
       "title": "Nollaig na mBan, Women's Christmas",
       "kind": "Tradition",
-      "text": "Traditionally the women of the house rested on 6 January while the men took over the work, after a busy Christmas. Today friends often meet for a meal or a drink.",
-      "someplacessay": "It is called Little Christmas in many places, and it is kept most strongly in Cork and Kerry.",
+      "text": "Traditionally, 6 January was a day off housework for the women, after a busy Christmas, while the men took over the work. Women gathered informally and visited friends and neighbours. Today friends often meet for a meal or a drink.",
+      "someplacessay": "It is also called Little Christmas. It was well known in some areas, such as Cork and Kerry, but not everywhere, and it faded in the mid 20th century before being revived.",
       "sources": [
-        "A national broadcaster or newspaper feature on Nollaig na mBan (to check)",
-        "A folklore archive entry on Little Christmas (to check)"
+        "Marion McGarry, 'The roots and traditions of Nollaig na mBan', RTÉ Brainstorm, 6 Jan 2026, https://www.rte.ie/brainstorm/2026/0106/1103975-nollaig-na-mban-january-6-ireland-roots-traditions-customs/, checked 2026-11-03",
+        "'On the woman's day of Christmas', The Irish Times, 6 Jan 1998, https://www.irishtimes.com/culture/on-the-woman-s-day-of-christmas-1.121479 (quotes Kevin Danaher on the name), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "'Kept most strongly in Cork and Kerry' softened to 'well known in some areas such as Cork and Kerry' (RTÉ's words). Added that men taking over the work was the ideal; the Irish Times piece also stresses the heavy Christmas workload. The modern meal-or-drink line rests on general press, not these two."
     },
     {
       "id": "brigid-eve",
@@ -188,14 +192,16 @@
       "day": 31,
       "title": "Oíche Fhéile Bríde, St Brigid's Eve",
       "kind": "Tradition",
-      "text": "Traditionally rushes were gathered on the eve of St Brigid's Day and woven into a cross, which was hung in the house for protection through the year.",
-      "someplacessay": "The design of the cross varies: some have three arms, some four, and the weave differs by region.",
+      "text": "Traditionally, on the eve of St Brigid's Day the family ate a meal of potatoes and butter and made crosses from rushes or straw in honour of the saint, asking her protection for the household, farm and land.",
+      "someplacessay": "The cross takes many forms: diamond, interlaced or wheel-shaped, with two, three or four arms, and other materials such as grass or wood were also used. In parts of Connacht a family member called Brigid brought in the rushes.",
       "sources": [
-        "A heritage or museum page on the St Brigid's cross (to check)",
-        "A folklore archive entry on Brigid's Eve customs (to check)"
+        "National Museum of Ireland, 'St Brigid's Day' (curator Clodagh Doyle), https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/st-brigid-s-day (via source.museum.ie), checked 2026-11-03",
+        "National Museum of Ireland, 'St Brigid's Crosses', https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Religion-and-Calendar-Customs/St-Brigid-s-Crosses (via source.museum.ie), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "reworded",
+      "checkNote": "Both sources are from the same museum (Irish Folklife Division), so they are not independent. A second independent source is still needed: the Dept of Culture's Intangible Heritage inventory page on weaving a St Brigid's cross confirms rushes, 1 February and protection, but my fetch of it was unreliable, so I have not counted it. Draft's 'hung in the house for protection' was softened to 'protection for household, farm and land' (museum's wording of purpose)."
     },
     {
       "id": "imbolc",
@@ -203,14 +209,16 @@
       "day": 1,
       "title": "Imbolc, Lá Fhéile Bríde",
       "kind": "Fact",
-      "text": "1 February is Imbolc, the old quarter day that marks the start of spring, and also the feast of St Brigid. It became a public holiday in 2023, on the first Monday of February, or on 1 February itself when that falls on a Friday.",
-      "someplacessay": "Some say Imbolc and St Brigid's Day were once separate celebrations that grew together.",
+      "text": "1 February is St Brigid's Day, and Imbolc is the old quarter day linked with the start of spring. St Brigid's Day became a public holiday in 2023, on the first Monday of February, or on 1 February itself when that falls on a Friday.",
+      "someplacessay": "Scholars still debate what the word Imbolc means, and St Brigid's Day is often thought to have taken over from an older pre-Christian festival. Met Éireann counts spring from 1 March (Nick Scroxton, Maynooth University, RTÉ Brainstorm, 27 Feb 2026).",
       "sources": [
-        "Irish Statute Book, Public Holidays (St Brigid's Day) Act 2022 (to check)",
-        "A quarter-day reference or Irish-language dictionary entry for Imbolc (to check)"
+        "Organisation of Working Time (Covid-19 Commemoration) Regulations 2022, S.I. No. 50 of 2022, Irish Statute Book, https://www.irishstatutebook.ie/eli/2022/si/50/made/en/html (made 7 Feb 2022; regs 4 and 5), checked 2026-11-03",
+        "Kelly Fitzgerald (UCD), 'What do we know about the roots of the Imbolc spring festival?', RTÉ Brainstorm, 31 Jan 2024, https://www.rte.ie/brainstorm/2024/0131/1429455-imbolc-imbolg-spring-pagan-festival-brigit/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "The draft said the holiday came from the 'Public Holidays (St Brigid's Day) Act 2022'. I could not find an Act of that name: the holiday was set by S.I. 50/2022, under the Organisation of Working Time Act 1997 (the same instrument that added 18 March 2022). The first Monday / Friday rule is exactly as drafted. 'Once separate then grew together' replaced by what the UCD scholar says: Brigid's Day is often seen as replacing Imbolc, and the word's meaning is disputed."
     },
     {
       "id": "candlemas",
@@ -218,14 +226,16 @@
       "day": 2,
       "title": "Candlemas",
       "kind": "Fact",
-      "text": "2 February is Candlemas in the church calendar, forty days after Christmas, when candles are blessed for the year ahead.",
-      "someplacessay": "Some places keep their Christmas decorations up until this day.",
+      "text": "2 February is Candlemas, the Feast of the Presentation of the Lord, forty days after Christmas. In many parishes candles are blessed at Mass on the day.",
+      "someplacessay": "Parishes differ in how they mark it, and Candlemas has long been linked with St Brigid's Day and with St Blaise the next day.",
       "sources": [
-        "Church calendar date, 2 February (to check)",
-        "A diocesan or parish page on Candlemas (to check)"
+        "Kelly Fitzgerald (UCD), 'What do we know about the roots of the Imbolc spring festival?', RTÉ Brainstorm, 31 Jan 2024, https://www.rte.ie/brainstorm/2024/0131/1429455-imbolc-imbolg-spring-pagan-festival-brigit/ (Candlemas = Presentation, 40 days after birth), checked 2026-11-03",
+        "Redemptorists Limerick, 'February 2nd: Feast of the Presentation of the Lord', https://www.redemptoristslimerick.ie/february-2nd-feast-of-the-presentation-of-the-lord/ (candles blessed at Masses on the day), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft's 'some places keep Christmas decorations up until this day' is not in either source, so it is replaced. The second source is one religious community's notice: other Irish parishes (Newmarket-on-Fergus, Tralee Dominicans) say the same, but I did not read those pages in full, so I have not listed them."
     },
     {
       "id": "st-blaise",
@@ -233,14 +243,16 @@
       "day": 3,
       "title": "St Blaise's Day",
       "kind": "Tradition",
-      "text": "In many parishes, people have their throats blessed on 3 February with two candles held crossed under the chin, a custom to protect against throat illness.",
-      "someplacessay": "Some parishes hold the blessing on the nearest Sunday instead.",
+      "text": "On 3 February, the feast of St Blaise, many parishes offer the blessing of throats: two candles are blessed, held crossed and touched against the throat while a prayer is said, asking protection from throat illness.",
+      "someplacessay": "Practice varies by parish. The blessing is linked with the day after Candlemas, and at the Carmelite church on Whitefriar Street in Dublin crowds attend.",
       "sources": [
-        "A diocesan or parish page on the Blessing of Throats (to check)",
-        "Church calendar date, 3 February (to check)"
+        "Erin Fox, 'The blessing of St Blaise', The Irish Catholic, 29 Jan 2015, https://www.irishcatholic.com/the-blessing-of-st-blaise/, checked 2026-11-03",
+        "RTÉ Archives, 'Blessing Of Throats - The Feast Of St Blaise 1969', https://www.rte.ie/archives/2024/0203/1428138-blessing-of-throats/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said some parishes hold it on the nearest Sunday: not in either source, so removed. Also the sources say 'two candles touched on the throat', crossed over and pressed to either side, and say the feast is on 3 February. 'Protect against throat illness' is the healing association with St Blaise, from both."
     },
     {
       "id": "patrick",
@@ -248,14 +260,16 @@
       "day": 17,
       "title": "Lá Fhéile Pádraig, St Patrick's Day",
       "kind": "Tradition",
-      "text": "A national feast day and public holiday. People traditionally wore a small bunch of shamrock or a paper cross on their coat.",
-      "someplacessay": "The big parades are a fairly modern addition; older custom was church in the morning and a quiet day.",
+      "text": "A national feast day and public holiday. For hundreds of years people wore crosses for the saint, and later adults wore a sprig of shamrock while children wore paper or fabric crosses, which became today's rosettes.",
+      "someplacessay": "The big parades are fairly modern: from the mid-19th century temperance societies held parades on the day, and it only became a national holiday in 1903.",
       "sources": [
-        "Irish government or tourism page on St Patrick's Day (to check)",
-        "A history feature on the origins of the parades (to check)"
+        "National Museum of Ireland, Irish Folklife Collections: 'St. Patrick', https://www.museum.ie/en-IE/Collections-Research/Folklife-Collections/Folklife-Collections-List-(1)/Religion-and-Calendar-Customs/St-Patrick (via source.museum.ie; Thomas Dineley 1681, children's crosses, 1908 rosettes), checked 2026-11-03",
+        "Marion McGarry, 'A day off from Lent: St Patrick's Day traditions from the past', RTÉ Brainstorm, 5 Mar 2025, https://www.rte.ie/brainstorm/2025/0305/1036394-a-day-off-from-lent-st-patricks-day-traditions-from-the-past/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft's 'older custom was church in the morning and a quiet day' is not in either source (RTÉ says the day was a welcome break from Lenten fasting), so it is replaced by what both say about badges and parades. The draft's paper cross was a child's custom, not general. The 'public holiday' status today is not in these two: RTÉ gives 1903 as when it became a national holiday."
     },
     {
       "id": "spring-equinox",
@@ -264,13 +278,15 @@
       "title": "Cónocht an Earraigh, spring equinox",
       "kind": "Fact",
       "text": "Day and night are close to equal length, and from here the days run longer than the nights until the autumn equinox.",
-      "someplacessay": "The exact moment falls on 20 or 21 March, depending on the year.",
+      "someplacessay": "The exact moment falls on 20 or 21 March, depending on the year. In 2026 it was 20 March.",
       "sources": [
-        "An astronomical almanac for the exact date (to check)",
-        "Met Éireann or Armagh Observatory page on the equinoxes (to check)"
+        "U.S. Naval Observatory, Astronomical Applications Department, seasons service, https://aa.usno.navy.mil/api/seasons?year=2026 (copy in test/fixtures/usno-seasons.json, fetched 2026-11-03), checked 2026-11-03",
+        "Royal Museums Greenwich, 'Space and astronomy highlights 2026', https://www.rmg.co.uk/stories/space-astronomy/space-astronomy-highlights-2026 (spring equinox 20 March; roughly equal day and night), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "supported",
+      "checkNote": "Wording kept. The 'days longer than nights until autumn equinox' line follows from the definition (RMG explains the tilt). Met Éireann's own page did not load for me; Met uses 1 March for the start of spring (see the Imbolc card)."
     },
     {
       "id": "lady-day",
