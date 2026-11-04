@@ -66,7 +66,7 @@
       ],
       "status": "draft",
       "sourcesChecked": false,
-      "verdict": "supported",
+      "verdict": "partial",
       "checkNote": "Only one source (Ó Dónaill) gives the proverb itself. A printed proverb collection with page number is needed for the second; I could not read one. sourcesChecked stays false."
     },
     {
@@ -294,14 +294,16 @@
       "day": 25,
       "title": "Lady Day",
       "kind": "Fact",
-      "text": "25 March, the feast of the Annunciation, was one of the traditional quarter days for paying rents and settling accounts.",
-      "someplacessay": "Quarter days differed between regions and between legal and farming use.",
+      "text": "25 March, the feast of the Annunciation, was one of the traditional quarter days in Ireland, when rents were paid and labourers were hired for the farming year.",
+      "someplacessay": "Quarter days differed between regions and between legal and farming use, and the 'old style' dates fell a few days later.",
       "sources": [
-        "A legal or history reference on the English and Irish quarter days (to check)",
-        "Church calendar date, 25 March (to check)"
+        "Brewer's Dictionary of Phrase and Fable, 'Quarter-days in England and Ireland' (Lady Day 25 March, Midsummer 24 June, Michaelmas 29 September, Christmas Day 25 December; old-style dates later), online text at https://words.fromoldbooks.org/Brewer-DictionaryOfPhraseAndFable/q/quarter-days-in-england-and-ireland.html, checked 2026-11-03",
+        "Love to Visit Ireland, 'Lady Day in Ireland: the quarter day that started the farming year', https://lovetovisitireland.com/lady-day-in-ireland-the-quarter-day-that-started-the-farming-year/ (rents paid, labourers hired; a tourism site, not a scholarly source), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "partial",
+      "checkNote": "Date and quarter-day status are firm (Brewer's). The rent and hiring detail rests on a popular tourism article only, and I found no scholarly or legal Irish source. These are the English-style legal quarter days, not the Irish Celtic ones (Samhain etc.), which the owner may want to make clear. Needs a better second source."
     },
     {
       "id": "bealtaine",
@@ -309,14 +311,16 @@
       "day": 1,
       "title": "Bealtaine, May Day",
       "kind": "Tradition",
-      "text": "Traditionally a May bush was decorated and set up near the house, yellow flowers such as primroses were laid on doorsteps, and fires were lit to protect people and animals as summer began.",
-      "someplacessay": "Some places keep the old May Day on 12 May, and the flowers and customs vary by district.",
+      "text": "Bealtaine, 1 May, was the first day of summer. A May bush, often hawthorn, was decorated and kept outside the house, yellow flowers such as primroses and marigolds were placed on doorsteps and windowsills for luck, and bonfires were lit to protect people, cattle and crops.",
+      "someplacessay": "The May bush custom was strongest in Leinster and the Midlands, and the flowers and customs vary by district.",
       "sources": [
-        "A folklore archive or national museum page on May Day customs (to check)",
-        "An Irish-language dictionary entry for Bealtaine (to check)"
+        "National Museum of Ireland, 'Traditions and customs May Day / Bealtaine' (Clodagh Doyle), https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/may-day (via source.museum.ie), checked 2026-11-03",
+        "Marion McGarry, 'Bealtaine traditions in Ireland: fire, water, light and luck', RTÉ Brainstorm, 1 May 2026, https://www.rte.ie/brainstorm/2026/0501/1046282-bealtaine-may-01st-traditions-folklore-history-ireland/, checked 2026-11-03; Foclóir Gaeilge-Béarla (Ó Dónaill), 'Bealtaine', https://www.teanglann.ie/en/fgb/Bealtaine"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Removed 'some places keep the old May Day on 12 May': neither source (nor my search) mentions it. Added the museum's region note. The museum page and its Summer page are the same curator's work, so the RTÉ piece is the second voice."
     },
     {
       "id": "summer-solstice",
@@ -324,14 +328,16 @@
       "day": 21,
       "title": "Grianstad an tSamhraidh, summer solstice",
       "kind": "Fact",
-      "text": "The longest day of the year. In most of Ireland there are around 17 hours of daylight, with true darkness hardly arriving in the far north.",
-      "someplacessay": "The solstice falls on 20 or 21 June, depending on the year.",
+      "text": "The longest day of the year, with about nine and a half hours more daylight in Ireland than on the winter solstice.",
+      "someplacessay": "The solstice falls on 20 or 21 June, depending on the year. In 2026 it was 21 June. For several days around it the hours of daylight barely change.",
       "sources": [
-        "An astronomical almanac for the exact date (to check)",
-        "Met Éireann or Armagh Observatory page on the solstices (to check)"
+        "Royal Museums Greenwich, 'What is the summer solstice?', https://www.rmg.co.uk/stories/time/summer-solstice (2026: 21 June, 08:24 GMT), checked 2026-11-03; U.S. Naval Observatory seasons data, 21 June 2026 08:24 UTC (test/fixtures/usno-seasons.json)",
+        "'Summer Solstice: the longest day and shortest night of the year', RTÉ Brainstorm, 20 Jun 2026, https://www.rte.ie/brainstorm/2026/0620/1056342-summer-solstice-longest-day-shortest-night-ireland-traditions-folklore/ (9 hours 30 minutes longer than winter solstice; daylight barely changes for days), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said 'around 17 hours of daylight in most of Ireland, true darkness hardly arriving in the far north': I found no citable source for either number (the site's own calculation gives about 17 hours in Limerick, but that is not a source). Replaced with the RTÉ figure. Owner may prefer to keep 17 hours if happy to cite the site's own calculation."
     },
     {
       "id": "st-johns-eve",
@@ -339,14 +345,16 @@
       "day": 23,
       "title": "Oíche Fhéile Eoin, St John's Eve",
       "kind": "Tradition",
-      "text": "On the eve of St John's Day, bonfires are traditionally lit, a custom still kept in parts of the south and west of Ireland.",
-      "someplacessay": "In some places people once drove cattle past the embers, and the fires are still strongest in certain parishes.",
+      "text": "On the eve of St John's Day, 23 June, communal bonfires were lit on hillsides, a custom still kept in some places, such as Cork city, where it is called Bonna Night, and in parts of the west.",
+      "someplacessay": "Families lit small fires on their farms and threw embers onto their fields to help the harvest, and cattle were driven through the ashes for luck. In some places the fire was lit on the eve of Saints Peter and Paul instead.",
       "sources": [
-        "A folklore archive entry on St John's Eve bonfires (to check)",
-        "A local-history source from a county that keeps the custom (to check)"
+        "National Museum of Ireland, Irish Folklife Collections: 'Summer' and 'Traditions and customs May Day / Bealtaine', https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/summer and https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/may-day (via source.museum.ie; in the west the bonfire night was most celebrated on St John's Eve), checked 2026-11-03",
+        "Marion McGarry, 'Why bonfires blaze across Ireland on June 23rd', RTÉ Brainstorm, 23 Jun 2026, https://www.rte.ie/brainstorm/2026/0623/1390519-bonfires-st-johns-eve-june-23rd-folklore-traditions-ireland-bonna-night/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said 'south and west': I could confirm Cork city (RTÉ) and the west (museum), so it now says that. Cattle through embers is in RTÉ. The museum describes the tradition in the past tense; RTÉ says bonfires still blaze on hilltops in some areas but have become unknown in some regions."
     },
     {
       "id": "lughnasa",
@@ -354,14 +362,16 @@
       "day": 1,
       "title": "Lúnasa, Lughnasa",
       "kind": "Fact",
-      "text": "1 August is Lughnasa, the old quarter day that opens the harvest season. The Irish name for the month of August, Lúnasa, comes from it, and Brian Friel's play Dancing at Lughnasa takes its name from the festival.",
-      "someplacessay": "Gatherings on hilltops around this time of year were traditionally common, and the exact day kept differs by place.",
+      "text": "1 August is Lughnasa, the old quarter day that opens the harvest season. The Irish name for the month of August, Lúnasa, comes from it.",
+      "someplacessay": "In recent centuries it was often kept on the last Sunday in July or the first Sunday in August. In some places people gathered on mountains or at lakes, in others it was a day for harvest fairs.",
       "sources": [
-        "An Irish-language dictionary entry for Lúnasa (to check)",
-        "A published listing for Dancing at Lughnasa (to check)"
+        "National Museum of Ireland, Irish Folklife Collections: 'Autumn' (Lúnasa), https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn (via source.museum.ie), checked 2026-11-03",
+        "Philip Judge, 'The story of La Lughnasa, first day of Ireland's ancient harvest festival', The Irish Times, 1 Aug 2018, https://www.irishtimes.com/culture/books/the-story-of-la-lughnasa-first-day-of-ireland-s-ancient-harvest-festival-1.3582934, checked 2026-11-03; Foclóir Gaeilge-Béarla (Ó Dónaill), 'Lúnasa' (August; Lá Lúnasa, 1 August, Lammas), https://www.teanglann.ie/en/fgb/L%C3%BAnasa"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Removed the Brian Friel clause: I could not find a fetchable publisher or theatre listing, and the Irish Times piece only mentions the play in a photo caption. If the owner wants it back it needs a source (Faber, the Abbey, or the play's own text). The month-name link rests on the dictionary entry plus the museum; it does not itself say the month was named after the festival, so I kept 'comes from it' softly: worth the owner's eye."
     },
     {
       "id": "puck-fair",
@@ -369,14 +379,16 @@
       "day": 10,
       "title": "Puck Fair opens",
       "kind": "Tradition",
-      "text": "Each year, from 10 to 12 August, Killorglin in County Kerry holds Puck Fair, in which a wild mountain goat is crowned King Puck and raised above the town.",
-      "someplacessay": "People tell different stories about how the custom began.",
+      "text": "Each August, from the 10th to the 12th, Killorglin in County Kerry holds Puck Fair. A goat is crowned King Puck on the first day and dethroned on the last. For about 400 years the goat spent the fair on a high stand above the town; since 2023 it has been raised only briefly.",
+      "someplacessay": "There is no written record of when the fair began; a charter of 1613 gave legal status to an existing fair. People tell different stories about the origin, such as a goat warning the town of raiders, or an older pre-Christian harvest festival.",
       "sources": [
-        "The Puck Fair official site (to check)",
-        "A Kerry tourism or heritage page on Puck Fair (to check)"
+        "Puck Fair Committee, 'History and Origins of Puck Fair', https://puckfair.ie/history/ and 2026 programme at https://puckfair.ie/ (coronation, dethronement), checked 2026-11-03",
+        "'Puck Fair' news report, RTÉ News, 10 Aug 2023, https://www.rte.ie/news/munster/2023/0810/1399039-puck-fair (committee: role of the goat should 'evolve'), checked 2026-11-03; also Irish Examiner, 'No high-rise perch for King Puck on Scattering Day', 11 Aug 2023, https://www.irishexaminer.com/news/munster/arid-41203246.html"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said a wild mountain goat is 'raised above the town' each year. After the 2022 heat welfare row the committee changed this in 2023, so the claim was out of date. I could not confirm the 2026 practice (programme says coronation on Gathering Day and dethronement on Scattering Day), so ask the owner whether to say 'a goat' or 'a wild goat'."
     },
     {
       "id": "assumption",
@@ -384,14 +396,16 @@
       "day": 15,
       "title": "Lá Fhéile Muire sa Fhómhar, Assumption",
       "kind": "Tradition",
-      "text": "The feast of the Assumption on 15 August is a holy day, and it was a traditional day for pilgrimages and for visiting holy wells.",
-      "someplacessay": "Different places keep their own pattern day, and some on dates around it.",
+      "text": "The feast of the Assumption on 15 August is a holy day, and it was a traditional time for pilgrimage and prayer at holy wells. Some wells, such as St Brigid's Well in Co. Leitrim, still hold their annual pilgrimage on the day.",
+      "someplacessay": "Different places keep their own pattern day, some on other dates: Ballyheigue in Kerry keeps its pattern day on 8 September.",
       "sources": [
-        "Church calendar date, 15 August (to check)",
-        "A heritage page on holy wells and pattern days (to check)"
+        "Irish Catholic Bishops' Conference, 'Catechetical resources for Holy Days of Obligation' (Assumption of Our Lady, 15 August), https://www.catholicbishops.ie/2013/08/14/18939/, checked 2026-11-03",
+        "RTÉ Archives, 'Ireland's holy wells', 20 Sep 2022, https://www.rte.ie/archives/2022/0920/1324361-irelands-holy-wells/ (St Brigid's Well pilgrimage on 15 August), checked 2026-11-03; National Museum of Ireland, 'Autumn' (pilgrimage and patterns), https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/seasonal-festivals/autumn; The Irish Times, 'A Pattern from the past', 2 Sep 2013, https://www.irishtimes.com/culture/heritage/a-pattern-from-the-past-1.1510978"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said it was a traditional day for 'pilgrimages and visiting holy wells'. The sources show a holy day and a pilgrimage at one named well; the museum's general statement is about autumn pilgrimage and patterns, not specifically 15 August, so the wording was narrowed to what is shown."
     },
     {
       "id": "autumn-equinox",
@@ -400,13 +414,15 @@
       "title": "Cónocht an Fhómhair, autumn equinox",
       "kind": "Fact",
       "text": "Day and night are close to equal again, and from here the nights run longer than the days until the spring equinox.",
-      "someplacessay": "The exact moment falls on 22 or 23 September, depending on the year.",
+      "someplacessay": "The exact moment falls on 22 or 23 September, depending on the year. In 2026 it was 23 September.",
       "sources": [
-        "An astronomical almanac for the exact date (to check)",
-        "Met Éireann or Armagh Observatory page on the equinoxes (to check)"
+        "U.S. Naval Observatory, Astronomical Applications Department, seasons service, https://aa.usno.navy.mil/api/seasons?year=2026 (2026: 23 September 00:05 UTC; copy in test/fixtures/usno-seasons.json), checked 2026-11-03",
+        "Royal Museums Greenwich, 'What and when is the autumnal equinox?', https://www.rmg.co.uk/stories/time/what-when-autumnal-equinox (2026: 23 September), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "supported",
+      "checkNote": "Wording kept; dates match. Day and night are close to equal because the Sun lights both hemispheres equally (RMG)."
     },
     {
       "id": "michaelmas",
