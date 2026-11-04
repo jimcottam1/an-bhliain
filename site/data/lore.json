@@ -7,14 +7,16 @@
       "day": 31,
       "title": "Oíche Shamhna, Hallowe'en",
       "kind": "Tradition",
-      "text": "Traditionally this was a night for fires, games and fortune-telling, and for a barmbrack with small objects baked into it. Hollowed-out turnips were the lanterns before pumpkins arrived.",
-      "someplacessay": "The foods, games and even the name of the night differ from county to county.",
+      "text": "Hallowe'en, Oíche Shamhna, was kept with feasting and games, including fortune-telling games about marriage. A barmbrack had small tokens baked into it, such as a ring, and turnips were hollowed out as lanterns before pumpkins took over.",
+      "someplacessay": "The foods, games and tokens in the brack differed from place to place.",
       "sources": [
-        "Irish folklore overviews of Hallowe'en customs (to check)",
-        "A national museum or heritage-council page on Samhain customs (to check)"
+        "National Museum of Ireland, Irish Folklife Collections: 'Traditions and customs of Halloween / Samhain', https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/hallowe-en-samhain (read on the museum's source.museum.ie mirror), checked 2026-11-03",
+        "Aoife McElwain, 'Tricks, treats and dead souls: Halloween habits and food traditions', The Irish Times, 31 Oct 2016, https://www.irishtimes.com/life-and-style/food-and-drink/tricks-treats-and-dead-souls-halloween-habits-and-food-traditions-1.2847317, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Fires dropped: neither source mentions Samhain bonfires. Museum and Irish Times support feasting, games, marriage divination, brack with a ring, turnip lanterns (a 19th-century turnip lantern is in the Museum of Country Life)."
     },
     {
       "id": "samhain",
@@ -22,14 +24,16 @@
       "day": 1,
       "title": "Samhain",
       "kind": "Fact",
-      "text": "1 November is the old Irish quarter day that opens the winter half of the year. In the old reckoning the year began here, with the darkest months to follow.",
+      "text": "Samhain, 1 November, was the first day of winter in the old Irish calendar, and one of the four old quarter days. The main celebrations took place on the evening before.",
       "someplacessay": "Some older accounts keep the festival on the evening of 31 October, since the old day was counted from nightfall.",
       "sources": [
-        "Quarter-day dates in standard Irish calendar references (to check)",
-        "An Irish-language dictionary entry for Samhain (to check)"
+        "National Museum of Ireland, Irish Folklife Collections: 'Traditions and customs of Halloween / Samhain', https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/hallowe-en-samhain (via source.museum.ie), checked 2026-11-03",
+        "Foclóir Gaeilge-Béarla (Ó Dónaill), Foras na Gaeilge, entry 'Samhain', https://www.teanglann.ie/en/fgb/Samhain, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Removed 'the year began here': neither source says it, so it needs a third source or stays out. Museum: first day of winter, marked 1 November, celebrated the evening before. Dictionary: Samhain is the ancient festival of 1 November. 'One of four quarter days' is from the README, not these sources."
     },
     {
       "id": "all-souls",
@@ -37,14 +41,16 @@
       "day": 2,
       "title": "Lá na Marbh, All Souls' Day",
       "kind": "Tradition",
-      "text": "Traditionally this is the day for remembering the dead. Families said prayers, and many parishes read out the names of the departed through November.",
-      "someplacessay": "Customs differ by parish. In some places the dead were also remembered on the night before.",
+      "text": "2 November is All Souls' Day, the Church's day for praying for the dead, and the Church in Ireland dedicates the whole month of November to remembering them. Parishes mark it with prayers, remembrance services and the blessing of graves.",
+      "someplacessay": "Customs differ by parish and by family.",
       "sources": [
-        "Church calendar date, 2 November (to check)",
-        "Folklore overviews of Irish November customs (to check)"
+        "Irish Catholic Bishops' Conference, 'In November We Remember', 27 Oct 2020, https://www.catholicbishops.ie/2020/10/27/in-november-we-remember-2/, checked 2026-11-03",
+        "Ruadhán Jones, 'November, the month of saints and souls', The Irish Catholic, 12 Nov 2020, https://www.irishcatholic.com/november-the-month-of-saints-and-souls/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "The draft said parishes read out names through November and that the dead were also remembered the night before. Neither is supported (sources mention a remembrance space in church, blessing of graves, services). Both sources are Catholic Church voices, so this is the church custom, not a folklore archive account."
     },
     {
       "id": "hearth",
@@ -52,14 +58,16 @@
       "day": 4,
       "title": "Níl aon tinteán mar do thinteán féin",
       "kind": "Saying",
-      "text": "A well-known proverb: there is no hearth like your own hearth. It suits these early dark evenings, when the fire is the centre of the house. It is not tied to this date.",
+      "text": "A well-known proverb: there is no hearth like your own hearth, meaning there is no place like home. It suits these early dark evenings. It is not tied to this date.",
       "someplacessay": "The wording varies a little from place to place.",
       "sources": [
-        "An Irish proverbs collection (to check)",
-        "An English-Irish dictionary entry for tinteán (to check)"
+        "Foclóir Gaeilge-Béarla (Ó Dónaill), Foras na Gaeilge, entry 'tinteán' (gives the proverb 'Níl aon tinteán mar do thinteán féin', glossed 'there is no place like home'), https://www.teanglann.ie/en/fgb/tinte%C3%A1n, checked 2026-11-03",
+        "[second source still needed] Foras na Gaeilge, New English-Irish Dictionary, https://www.focloir.ie/en/dictionary/ei/hearth confirms tinteán = hearth only, not the proverb, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "supported",
+      "checkNote": "Only one source (Ó Dónaill) gives the proverb itself. A printed proverb collection with page number is needed for the second; I could not read one. sourcesChecked stays false."
     },
     {
       "id": "martinmas",
@@ -67,14 +75,16 @@
       "day": 10,
       "title": "Oíche Fhéile Mártain, St Martin's Eve",
       "kind": "Tradition",
-      "text": "In some districts an animal was traditionally killed for the feast of St Martin, and a little of the blood was sprinkled at the door. Many people also avoided certain work, such as spinning, on the night.",
-      "someplacessay": "The custom was strongest in parts of the south and east, and it varied by household.",
+      "text": "On St Martin's Eve, 10 November, a fowl or other animal was killed at the door in many districts, and its blood sprinkled at the threshold and corners of the house to keep out harm. Work with wheels, such as spinning or milling, was avoided on the day.",
+      "someplacessay": "The custom was found from north Connacht to Kerry and across the midlands, and was rarer in Ulster and on the east coast. It could be kept on the eve or on 11 November itself.",
       "sources": [
-        "Folklore studies of Irish saints' day customs (to check)",
-        "A heritage or folklore archive summary of St Martin's Eve (to check)"
+        "Marion McGarry, 'Opinion: Blood sacrifice and rites in Ireland on 11 November', RTÉ Brainstorm, 8 Nov 2019, https://rte.ie/brainstorm/2019/1108/1089533-martinmas-blood-sacrifice-rites-ireland-november-11th (cites Kevin Danaher, The Year in Ireland, and Henry Morris in Béaloideas), checked 2026-11-03",
+        "Máirtín Mac Con Iomaire, 'Martinmas: saints, spiders' webs, pagan pasts and prophylactics', The Irish Times, 9 Nov 2020, https://www.irishtimes.com/culture/heritage/martinmas-saints-spiders-webs-pagan-pasts-and-prophylactics-1.4404711, checked 2026-11-03; also 'November 11th - Martinmas in Co. Mayo', https://www.mayo-ireland.ie/en/about-mayo/arts-culture/folklore/martinmas.html"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said strongest in the south and east: wrong. Sources say north Connacht to Kerry and the midlands, rarer on the east coast. Both articles draw on Danaher and Mac Fhloinn's 'Blood Rite' so they are not fully independent; the Mayo page is a third local confirmation. The RTÉ title is approximate. Blood-sacrifice detail is strong; check you are happy to show it."
     },
     {
       "id": "immaculate-conception",
@@ -82,14 +92,16 @@
       "day": 8,
       "title": "The Feast of the Immaculate Conception",
       "kind": "Tradition",
-      "text": "For generations, country people travelled to the nearest town on 8 December for Christmas shopping, and the day is still known as the start of the big Christmas shop in some places.",
-      "someplacessay": "It is a church holy day, and some people count it as the real start of Christmas, others do not.",
+      "text": "8 December, the Feast of the Immaculate Conception, was a holy day, and for generations it was the traditional day for people from the country to go to Dublin and other towns for their Christmas shopping. The habit has faded in recent years.",
+      "someplacessay": "As a holy day, schools were closed, which let families make a day of it. Some people still count it as the start of the Christmas season, others do not.",
       "sources": [
-        "Church calendar date, 8 December (to check)",
-        "Irish social-history or newspaper features on the Christmas shopping day (to check)"
+        "Una Mullally, 'December 8th: The day when people \"from the country\" came to Dublin to shop', The Irish Times, 8 Dec 2019, https://www.irishtimes.com/culture/heritage/december-8th-the-day-when-people-from-the-country-came-to-dublin-to-shop-1.4094195, checked 2026-11-03",
+        "Marion McGarry, Irish Christmas traditions feature, RTÉ Brainstorm, https://www.rte.ie/brainstorm/2024/1209/1265469-christmas-traditions-ireland-december-8th-margadh-mor-christmas-box-american-letter (quotes Lillis Ó Laoire), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said 'nearest town'; both sources say Dublin and city shopping in particular. Past tense for 'still known as': the Irish Times piece says it used to mark the start of the season. Both are journalism, not a social-history study."
     },
     {
       "id": "winter-solstice",
@@ -97,14 +109,16 @@
       "day": 21,
       "title": "Grianstad an Gheimhridh, winter solstice",
       "kind": "Fact",
-      "text": "The shortest day of the year. At Newgrange in County Meath, the rising sun lights the inner chamber of the passage tomb around this time.",
-      "someplacessay": "The light enters the chamber for several days around the solstice, not only on the day itself. The solstice falls on 21 or 22 December depending on the year.",
+      "text": "The shortest day of the year. At Newgrange in County Meath, a beam of the rising sun runs down the passage and lights the inner chamber around the winter solstice, through a gap called the roof-box.",
+      "someplacessay": "The sunlight reaches the chamber on several mornings around the solstice, 19 to 23 December, not only on the day itself. The solstice falls on 21 or 22 December depending on the year.",
       "sources": [
-        "Office of Public Works or Heritage Ireland page on Newgrange (to check)",
-        "An almanac for the exact solstice date (to check)"
+        "National Museum of Ireland, 'The Winter solstice at Newgrange', https://source.museum.ie/en-IE/Collections-Research/Irish-Antiquities-Division-Collections/Irish-Antiquities-Articles/The-Winter-solstice-at-Newgrange (roof-box channels sunlight along the passage at sunrise on the solstice), checked 2026-11-03",
+        "Tourism Ireland, 'Newgrange, County Meath', ireland.com, https://www.ireland.com/en/magazine/built-heritage/newgrange/ (light travels 19 metres up the passage); solstice dates from the U.S. Naval Observatory seasons service, https://aa.usno.navy.mil/api/seasons (see README); 19-23 December from newgrange.com/solstice-lottery.htm, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "supported",
+      "checkNote": "Roof-box added. 'Several days' (19 to 23 December) came from newgrange.com, a private site, because gov.ie blocked me and no heritageireland.ie page was found. Worth a look at heritageireland.ie by hand."
     },
     {
       "id": "christmas-eve",
@@ -112,14 +126,16 @@
       "day": 24,
       "title": "Oíche Nollag, Christmas Eve",
       "kind": "Tradition",
-      "text": "Traditionally a candle is lit in the window on Christmas Eve, to welcome anyone who is looking for shelter.",
-      "someplacessay": "In some homes the youngest child lights it; in others it is left to someone with a particular name, or to the head of the house.",
+      "text": "On Christmas Eve a lit candle was placed in the window, widely explained as a welcome for Mary and Joseph and any traveller looking for shelter. In some accounts the youngest child lights it and someone named Mary puts it out.",
+      "someplacessay": "Accounts differ: some say the head of the house lights it, and some give it a Penal-times origin (a signal to wandering priests). Some Irish people say they never heard of it.",
       "sources": [
-        "Irish Christmas custom articles from a national broadcaster or newspaper (to check)",
-        "A folklore archive entry on the Christmas candle (to check)"
+        "'The candle in the window', Kilkenny Observer, https://kilkennyobserver.ie/the-candle-in-the-window/ (welcome to Mary and Joseph, door left unlatched), checked 2026-11-03",
+        "Cindy Thomson, 'The Irish Christmas Candle in the Window', The Wild Geese, 12 Dec 2014, https://thewildgeese.irish/xn/detail/6442157:BlogPost:132236 (doubts how widely known it was), checked 2026-11-03; also IrishCentral, https://www.irishcentral.com/roots/christmas-ireland-history-traditions"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "marked",
+      "checkNote": "Draft claimed a name rule and youngest child as fact: only popular articles support it, and one author found Irish people who had never heard of it. Marked as a reported custom. No folklore archive or museum source found: Dúchas returned a security check page to my fetcher, so I did not go round it. sourcesChecked false until a folklore source is found."
     },
     {
       "id": "hospitality",

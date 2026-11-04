@@ -109,7 +109,8 @@ test('lore data: every entry has a label, sources, text, a valid date and a draf
     assert.ok(Array.isArray(e.sources) && e.sources.length >= 2, e.id + ' needs two sources');
     assert.ok(e.sources.every((s) => typeof s === 'string' && s.length > 5), e.id + ' source text');
     assert.strictEqual(e.status, 'draft', e.id + ' must be draft');
-    assert.strictEqual(e.sourcesChecked, false, e.id + ' sourcesChecked');
+    assert.strictEqual(typeof e.sourcesChecked, 'boolean', e.id + ' sourcesChecked');
+    assert.ok(e.sourcesChecked === false || (e.sources.length >= 2 && e.verdict && e.checkNote), e.id + ' checked cards need a verdict and note');
     assert.ok(e.title && e.text && e.someplacessay, e.id + ' fields');
     assert.ok(e.month >= 1 && e.month <= 12 && e.day >= 1 && e.day <= 31, e.id + ' date');
     const dt = new Date(Date.UTC(2028, e.month - 1, e.day));
