@@ -143,14 +143,16 @@
       "day": 25,
       "title": "Ar scáth a chéile a mhaireann na daoine",
       "kind": "Saying",
-      "text": "A well-loved proverb, often translated as people live in each other's shelter. It fits Christmas Day, when many people open their doors to others. It is not tied to this date.",
-      "someplacessay": "People translate it in different ways, such as 'we live in each other's shadow' or 'in each other's shelter'.",
+      "text": "A well-loved proverb, often translated as people live in each other's shelter, meaning that people depend on one another. It fits Christmas Day, when many people open their doors to others. It is not tied to this date.",
+      "someplacessay": "People translate it in different ways, such as 'we live in each other's shadow' or 'in each other's shelter'. The older dictionary form is 'Ar scáth a chéile a mhaireas na daoine'.",
       "sources": [
-        "An Irish proverbs collection (to check)",
-        "An English-Irish dictionary entry for scáth (to check)"
+        "Foclóir Gaeilge-Béarla (Ó Dónaill), Foras na Gaeilge, entry 'scáth' (Prov: 'Ar scáth a chéile a mhaireas na daoine', glossed 'man is a social animal'; scáth also means shelter and shadow), https://www.teanglann.ie/en/fgb/sc%C3%A1th, checked 2026-11-03",
+        "[second source still needed] none found that I could read: popular proverb sites and blogs repeat it, but none is a citable collection with a page number"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "partial",
+      "checkNote": "The proverb exists and the dictionary's form ends 'mhaireas', not 'mhaireann' as in the draft title; I left the title alone (it is the usual modern spelling) but the owner should choose. The 'shelter' versus 'shadow' meaning of scáth is confirmed by the dictionary. Needs a printed proverb collection for the second source."
     },
     {
       "id": "wren-day",
@@ -430,14 +432,16 @@
       "day": 29,
       "title": "Michaelmas",
       "kind": "Tradition",
-      "text": "The feast of St Michael, 29 September, was traditionally marked with a goose dinner. A well-known saying warned against picking blackberries after this date.",
-      "someplacessay": "Some places say the blackberries are spoiled after Michaelmas, others say after Hallowe'en.",
+      "text": "The feast of St Michael, 29 September, was known as the goose harvest, and a Michaelmas goose was traditionally roasted and eaten that day. A well-known folk belief warned against picking blackberries after it, because the púca or the devil had spoiled them.",
+      "someplacessay": "Not everyone agrees on the date: some places say the blackberries are spoiled after Michaelmas, others say after Hallowe'en. Michaelmas was also a day for paying debts and rent.",
       "sources": [
-        "Folklore archive entries on Michaelmas customs (to check)",
-        "Church calendar date, 29 September (to check)"
+        "Marion McGarry, Michaelmas feature, RTÉ Brainstorm (URL dated 2019, page updated 29 Sep 2026), https://www.rte.ie/brainstorm/2019/0926/1078446-september-29th-michaelmas-ireland, checked 2026-11-03",
+        "'Fruit of the Doom', An Irishman's Diary, The Irish Times (28 September, year not read from the page), https://www.irishtimes.com/opinion/fruit-of-the-doom-an-irishman-s-diary-about-blackberries-1.3236018 (blackberry belief; Michaelmas goose); Regina Sexton (UCC), 'Why you shouldn't eat blackberries after Halloween', RTÉ Brainstorm, 30 Oct 2025, https://www.rte.ie/brainstorm/2025/1030/1541280-blackberries-halloween-folklore-puca-devil-out-of-season-fruit, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "'Saying' changed to 'folk belief', as it is a belief and legend, not a proverb. The Halloween date for blackberries is confirmed by the UCC food historian, so the 'others say Halloween' line is now properly supported. Irish Times author not read from the page, so left out."
     },
     {
       "id": "new-year",
@@ -448,11 +452,13 @@
       "text": "A familiar proverb: health is better than wealth. It is often said at New Year, when people wish each other well. It is not tied to this date.",
       "someplacessay": "People pronounce and write it in a few ways across different regions.",
       "sources": [
-        "An Irish proverbs collection (to check)",
-        "An English-Irish dictionary entry for sláinte (to check)"
+        "Foclóir Gaeilge-Béarla (Ó Dónaill), Foras na Gaeilge, entry 'sláinte' (Prov: 'Is fearr an tsláinte ná na táinte', 'health is better than wealth'), https://www.teanglann.ie/en/fgb/sl%C3%A1inte, checked 2026-11-03",
+        "New English-Irish Dictionary, Foras na Gaeilge, entry 'health' (phrase 'your health is your wealth': is fearr an tsláinte ná na táinte), https://www.focloir.ie/en/dictionary/ei/health, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "supported",
+      "checkNote": "The proverb and its meaning are in two separate dictionaries, but both are Foras na Gaeilge works, so they are not fully independent. 'Often said at New Year' is not in either dictionary; it is Wren's framing. Owner may want to soften it to 'a good wish for the New Year'."
     },
     {
       "id": "valentine-relics",
@@ -460,14 +466,16 @@
       "day": 14,
       "title": "St Valentine's Day",
       "kind": "Fact",
-      "text": "Relics said to be those of St Valentine have been kept in the Carmelite church on Whitefriar Street in Dublin since the 1800s, and couples visit the shrine on 14 February.",
-      "someplacessay": "The church describes the relics as a gift from the Pope, and historians disagree about which St Valentine they belong to.",
+      "text": "Relics said to be those of St Valentine have been kept in the Carmelite church on Whitefriar Street in Dublin since 1836, when Pope Gregory XVI gave them to Father John Spratt. On 14 February couples visit the shrine and have their rings blessed.",
+      "someplacessay": "Most historians accept the Pope's gift, but not which St Valentine the relics belong to: at least three saints named Valentine are listed for 14 February, and churches in Glasgow and Terni also claim relics.",
       "sources": [
-        "The Whitefriar Street Carmelite church website (to check)",
-        "A history or heritage feature on the Valentine relics in Dublin (to check)"
+        "Irish Carmelites, 'The Shrine of Saint Valentine', https://carmelites.ie/the-shrine-of-saint-valentine (gift from Pope Gregory XVI to Fr Spratt, arrival 10 Nov 1836, two Masses and blessing of rings on 14 February), checked 2026-11-03",
+        "Róisín Ingle, 'No love lost in the battle to claim heart of St Valentine', The Irish Times, 13 Feb 1999, https://www.irishtimes.com/news/no-love-lost-in-the-battle-to-claim-heart-of-st-valentine-1.152289 (most historians accept the gift; at least three Valentines; Gorbals claim), checked 2026-11-03; RTÉ Lifestyle, 'Who was St Valentine', 14 Feb 2026, https://www.rte.ie/lifestyle/living/2026/0214/1029381-who-was-st-valentine-and-why-do-we-celebrate-him/"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "'Since the 1800s' made exact (1836). The draft's 'the church describes the relics as a gift' now rests on the church's own page and the Irish Times. The Dictionary of Irish Biography entry on Spratt would be a good academic third source, but the site gave my fetcher a JavaScript challenge, so I did not use it. The label is Fact, but the identity of the saint is uncertain: owner may prefer Tradition."
     },
     {
       "id": "may-eve",
@@ -475,14 +483,16 @@
       "day": 30,
       "title": "Oíche Bhealtaine, May Eve",
       "kind": "Tradition",
-      "text": "May Eve was traditionally seen as a night when the fairies were active, and people took small precautions, such as keeping fire and milk in the house, to protect the household and the animals.",
-      "someplacessay": "The precautions differ between regions, and in some places the same beliefs attach to November Eve.",
+      "text": "May Eve was a night when the fairies and other forces were believed to be especially active. People protected the house by placing yellow flowers at the door, and by not letting fire or water leave the house, so as not to lose the luck of the house.",
+      "someplacessay": "The precautions differ between regions, and the museum notes that these forces were believed to be active around all the quarter days, so some of the same beliefs belong to November Eve.",
       "sources": [
-        "Folklore archive entries on May Eve beliefs (to check)",
-        "A heritage overview of fairy lore and the calendar (to check)"
+        "National Museum of Ireland, 'Traditions and customs May Day / Bealtaine', https://www.museum.ie/en-ie/collections-research/folklife-collections/folklife-collections-list-(1)/religion-and-calendar-customs/may-day (via source.museum.ie; flowers keep fairies out; fire and water not asked for or taken from the home on May Eve or May Day), checked 2026-11-03",
+        "Marion McGarry, 'Bealtaine traditions in Ireland: fire, water, light and luck', RTÉ Brainstorm, 1 May 2026, https://www.rte.ie/brainstorm/2026/0501/1046282-bealtaine-may-01st-traditions-folklore-history-ireland/ (fire not permitted to leave the house, or its luck would leave), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": false,
+      "verdict": "reworded",
+      "checkNote": "Draft said 'keeping fire and milk in the house': milk is not in either source (fire and water are). The fairy belief itself is only in the museum page; RTÉ covers the fire rule but did not mention fairies in the part I read, so I count one solid source for the fairy claim. Needs a second folklore source (e.g. a book of Irish calendar customs) before sourcesChecked can be true."
     },
     {
       "id": "colmcille",
@@ -490,14 +500,16 @@
       "day": 9,
       "title": "Lá Fhéile Colmcille, St Columba",
       "kind": "Fact",
-      "text": "9 June is the feast of St Columba, or Colmcille, who founded monasteries in Derry and Durrow and later the community on Iona.",
-      "someplacessay": "Some sources give slightly different dates for his life, though the feast day is firmly kept on 9 June.",
+      "text": "9 June is the feast of St Columba, or Colmcille, who built his first church in Derry, founded the monastery at Durrow, and in 563 crossed to Iona off Scotland, where he founded a community.",
+      "someplacessay": "He is credited with founding many other monasteries, but only Durrow and Iona are reliably his. Some sources give slightly different dates for his life, though the feast day is firmly kept on 9 June.",
       "sources": [
-        "An Irish saints calendar or church calendar (to check)",
-        "A biography entry for Colmcille in a national dictionary of biography (to check)"
+        "RTÉ Archives, 'St Colmcille's holy well' (Durrow Abbey, Offaly), https://www.rte.ie/archives/2024/0507/1447759-st-colmcilles-holy-well/ (feast day 9 June; first church in Derry; monastery at Durrow), checked 2026-11-03",
+        "Historic Environment Scotland, 'Iona Abbey and Nunnery: history', https://www.historicenvironment.scot/visit-a-place/places/iona-abbey-and-nunnery/history/ (Columba and 12 companions came from Ireland in AD 563; monastery founded), checked 2026-11-03; Sarah McCann, 'Saint Columba, June 9th and the monastery of Durrow', Offaly History Blog no. 137, 8 Jun 2019, https://offalyhistoryblog.com/2019/06/08/saint-columba-june-9th-and-the-monastery-of-durrow-to-every-cow-her-calf-so-to-every-book-its-copy-by-sarah-mccann"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Draft said he 'founded monasteries in Derry and Durrow'. The Offaly historian cautions that of all the monasteries credited to him only Durrow and Iona can be securely attributed, so Derry is now 'built his first church' (RTÉ's wording) and the caution is added. Dictionary of Irish Biography blocked my fetcher, so it is not cited."
     },
     {
       "id": "ciaran",
@@ -505,14 +517,16 @@
       "day": 9,
       "title": "Lá Fhéile Chiaráin, St Ciarán",
       "kind": "Fact",
-      "text": "9 September is the feast of St Ciarán, the founder of the monastery at Clonmacnoise on the Shannon in County Offaly.",
-      "someplacessay": "Pilgrims have gathered at Clonmacnoise on or near his feast day, and the exact customs have varied over time.",
+      "text": "9 September is the feast of St Ciarán, the founder of the monastery at Clonmacnoise on the Shannon in County Offaly. He is a co-patron of the diocese of Ardagh and Clonmacnois.",
+      "someplacessay": "Pilgrims have long visited Clonmacnoise, and sources differ on the exact year of the foundation, around AD 544 to 549.",
       "sources": [
-        "An Irish saints calendar or church calendar (to check)",
-        "A heritage page on Clonmacnoise (to check)"
+        "National Monuments Service, 'Clonmacnoise, County Offaly', https://www.archaeology.ie/?p=2261 (founded by St Ciaran shortly before his death in 549; River Shannon; pilgrims), checked 2026-11-03",
+        "Diocese of Ardagh and Clonmacnois, 'Lá Fhéile Chiaráin', https://ardaghdiocese.org/la-fheile-chiarain/ (9 September, co-patron, first abbot of Clonmacnois), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "Wording kept. Dropped 'pilgrims gathered on or near his feast day': neither source says so, though the National Monuments page does mention pilgrims removing soil from his grave and the diocese calls Clonmacnois a famous place of pilgrimage. The two sources give different dates for the foundation (death in 549 versus 544), hence the range."
     },
     {
       "id": "meteorological-winter",
@@ -520,14 +534,16 @@
       "day": 1,
       "title": "The first day of winter, by the weather forecasters",
       "kind": "Fact",
-      "text": "Met Éireann counts winter as December, January and February, so 1 December is the first day of winter for the weather records, even though the old Irish year began its winter a month earlier, on 1 November.",
-      "someplacessay": "Almanacs and many people still count winter from the shortest-day solstice, so three different starting points are in use.",
+      "text": "Met Éireann counts winter as December, January and February, so 1 December is the first day of winter for the weather records, even though the old Irish winter began a month earlier, on 1 November.",
+      "someplacessay": "Many people and almanacs count winter from the shortest-day solstice, so three different starting points are in use.",
       "sources": [
-        "Met Éireann's page on the meteorological seasons (to check)",
-        "A second reference on the Irish seasons and the quarter days (to check)"
+        "Met Éireann, 'Outreach: Irish Seasons', https://www.met.ie/education/outreach-irish-seasons/ (winter December/January/February), checked 2026-11-03",
+        "Nick Scroxton (Maynooth University), 'February or March: when does spring really begin?', RTÉ Brainstorm, 27 Feb 2026, https://www.rte.ie/brainstorm/2026/0227/1555626-spring-dates-celtic-calendar-climate-science-meteorologists/ (meteorological versus Celtic and astronomical seasons), checked 2026-11-03; National Museum of Ireland, 'Traditions and customs of Halloween / Samhain' (1 November the first day of winter)"
       ],
       "status": "draft",
-      "sourcesChecked": false
+      "sourcesChecked": true,
+      "verdict": "reworded",
+      "checkNote": "'The old Irish year began its winter' reworded to 'the old Irish winter began' (matches the museum; the 'year began' idea has no source, as on the Samhain card). 'Almanacs count winter from the solstice' is shown by the astronomical definition (RMG, Naval Observatory dates) but not stated in these three, so I left it as a plain observation."
     }
   ]
 }
