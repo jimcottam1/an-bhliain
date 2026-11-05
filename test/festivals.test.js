@@ -106,10 +106,18 @@ test('lore data: every entry has a label, sources, text, a valid date and a draf
   for (const e of lore.entries) {
     assert.ok(!ids.has(e.id), 'duplicate id ' + e.id); ids.add(e.id);
     assert.ok(['Fact', 'Tradition', 'Saying'].includes(e.kind), e.id + ' kind');
-    assert.ok(Array.isArray(e.sources) && e.sources.length >= 2, e.id + ' needs two sources');
+    assert.ok(Array.isArray(e.sources) && e.sources.length >= (e.sourcesChecked ? 2 : 1), e.id + ' needs two sources (one while unchecked)');
     assert.ok(e.sources.every((s) => typeof s === 'string' && s.length > 5), e.id + ' source text');
     assert.strictEqual(e.status, 'draft', e.id + ' must be draft');
-    assert.strictEqual(e.sourcesChecked, false, e.id + ' sourcesChecked');
+    assert.strictEqual(typeof e.sourcesChecked, 'boolean', e.id + ' sourcesChecked');
+    assert.ok(['supported', 'reworded', 'partial', 'marked', 'drop'].includes(e.verdict), e.id + ' verdict must be one of the five, got ' + e.verdict);
+    assert.ok(typeof e.checkNote === 'string' && e.checkNote.length > 10, e.id + ' needs a checkNote');
+    if (e.verdict === 'partial' || e.verdict === 'marked') assert.strictEqual(e.sourcesChecked, false, e.id + ' partial or marked means unchecked');
+    if (e.sourcesChecked) {
+      assert.ok(e.sources.length >= 2, e.id + ' checked needs two sources');
+      assert.ok(!/still needed/i.test(JSON.stringify(e)), e.id + ' is checked but still says a source is needed');
+      for (const src of e.sources) assert.match(src, /checked 20\d\d-\d\d-\d\d/, e.id + ' every source needs a checked date');
+    }
     assert.ok(e.title && e.text && e.someplacessay, e.id + ' fields');
     assert.ok(e.month >= 1 && e.month <= 12 && e.day >= 1 && e.day <= 31, e.id + ' date');
     const dt = new Date(Date.UTC(2028, e.month - 1, e.day));
@@ -126,4 +134,17 @@ test('lore: comingUp leaves out an entry that falls on the chosen day', () => {
   const rows = Lore.comingUp(lore.entries, 2026, 11, 4, 3); // the 4 Nov card is the day itself
   assert.strictEqual(rows[0].entry.id, 'martinmas');
   assert.ok(rows.every((r) => r.entry.id !== 'hearth'));
+});
+
+test('lore: a card with holdBack true is never chosen or listed, and the switch is reversible', () => {
+  const entries = [{ id: 'a', month: 11, day: 3 }, { id: 'b', month: 11, day: 4, holdBack: true }, { id: 'c', month: 11, day: 9 }];
+  assert.strictEqual(Lore.nearest(entries, 2026, 11, 4).entry.id, 'a');
+  assert.ok(!Lore.comingUp(entries, 2026, 11, 3, 5).some((r) => r.entry.id === 'b'));
+  entries[1].holdBack = false;
+  assert.strictEqual(Lore.nearest(entries, 2026, 11, 4).entry.id, 'b');
+});
+
+test('lore data: christmas-eve and lady-day are held back for now (recommendation, owner to confirm)', () => {
+  for (const id of ['christmas-eve', 'lady-day']) assert.strictEqual(lore.entries.find((e) => e.id === id).holdBack, true);
+  assert.notStrictEqual(Lore.nearest(lore.entries, 2026, 12, 24).entry.id, 'christmas-eve');
 });
