@@ -41,7 +41,7 @@
 
   // A lore card may be shared only when it is approved and its sources are checked.
   function loreShareable(entry) {
-    return !!entry && entry.status === 'approved' && entry.sourcesChecked === true;
+    return !!entry && !entry.holdBack && entry.status === 'approved' && entry.sourcesChecked === true;
   }
 
   // Hand the text over. Returns 'share', 'cancelled', 'clipboard' or 'box' (the caller then shows the text box).
