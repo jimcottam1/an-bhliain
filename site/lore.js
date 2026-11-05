@@ -50,7 +50,7 @@
 
   // The footer line about the lore as a whole.
   function footerNote(entries) {
-    var drafts = (entries || []).filter(function (e) { return e.status === 'draft'; });
+    var drafts = (entries || []).filter(function (e) { return e.status === 'draft' && !e.holdBack; });
     if (!drafts.length) return '';
     if (drafts.some(function (e) { return !e.sourcesChecked; })) return 'Lore cards are drafts. We are still checking some against their sources, so the wording is not final yet.';
     return 'Lore cards are drafts. Their sources are checked, and the wording awaits final review.';

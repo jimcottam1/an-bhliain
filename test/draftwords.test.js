@@ -41,6 +41,12 @@ test('the footer note follows the data: unchecked drafts, all checked, or no dra
   assert.strictEqual(Lore.footerNote([]), '');
 });
 
+test('the footer note ignores held-back cards, which readers never see', () => {
+  const held = { status: 'draft', sourcesChecked: false, holdBack: true };
+  assert.strictEqual(Lore.footerNote([held, { status: 'draft', sourcesChecked: true }]), FOOT_B);
+  assert.strictEqual(Lore.footerNote([held, { status: 'approved', sourcesChecked: true }]), '');
+});
+
 test('the page starts with the cautious footer text and the app updates it from the data', () => {
   const html = fs.readFileSync(path.join(__dirname, '..', 'site', 'index.html'), 'utf8');
   assert.ok(html.includes('<p id="lorenote">' + FOOT_A + '</p>'));
