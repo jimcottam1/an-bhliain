@@ -48,7 +48,7 @@
         "Ruadhán Jones, 'November, the month of saints and souls', The Irish Catholic, 12 Nov 2020, https://www.irishcatholic.com/november-the-month-of-saints-and-souls/, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": true,
+      "sourcesChecked": false,
       "verdict": "reworded",
       "checkNote": "The draft said parishes read out names through November and that the dead were also remembered the night before. Neither is supported (sources mention a remembrance space in church, blessing of graves, services). Both sources are Catholic Church voices, so this is the church custom, not a folklore archive account."
     },
@@ -100,7 +100,7 @@
         "Marion McGarry, Irish Christmas traditions feature, RTÉ Brainstorm, https://www.rte.ie/brainstorm/2024/1209/1265469-christmas-traditions-ireland-december-8th-margadh-mor-christmas-box-american-letter (quotes Lillis Ó Laoire), checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": true,
+      "sourcesChecked": false,
       "verdict": "reworded",
       "checkNote": "Draft said 'nearest town'; both sources say Dublin and city shopping in particular. Past tense for 'still known as': the Irish Times piece says it used to mark the start of the season. Both are journalism, not a social-history study."
     },
@@ -375,7 +375,7 @@
         "Foclóir Gaeilge-Béarla (Ó Dónaill), Foras na Gaeilge, entry 'Lúnasa' (August; Lá Lúnasa, first of August, Lammas), https://www.teanglann.ie/en/fgb/L%C3%BAnasa, checked 2026-11-03"
       ],
       "status": "draft",
-      "sourcesChecked": true,
+      "sourcesChecked": false,
       "verdict": "reworded",
       "checkNote": "The last-Sunday-in-July and mountains-or-lakes lines are removed: they came only from the National Museum page. The Friel clause is out for lack of a source. One of the two sources is an Irish Times staff piece, not an expert's, so the owner's rule on journalism may turn this to false. 'Month name comes from the festival' is softly worded: the dictionary shows the month and the day share the name."
     },
@@ -479,7 +479,7 @@
         "Róisín Ingle, 'No love lost in the battle to claim heart of St Valentine', The Irish Times, 13 Feb 1999, https://www.irishtimes.com/news/no-love-lost-in-the-battle-to-claim-heart-of-st-valentine-1.152289 (most historians accept the gift; at least three Valentines; Gorbals claim), checked 2026-11-03; RTÉ Lifestyle, 'Who was St Valentine', 14 Feb 2026, https://www.rte.ie/lifestyle/living/2026/0214/1029381-who-was-st-valentine-and-why-do-we-celebrate-him/"
       ],
       "status": "draft",
-      "sourcesChecked": true,
+      "sourcesChecked": false,
       "verdict": "reworded",
       "checkNote": "'Since the 1800s' made exact (1836). The draft's 'the church describes the relics as a gift' now rests on the church's own page and the Irish Times. The Dictionary of Irish Biography entry on Spratt would be a good academic third source, but the site gave my fetcher a JavaScript challenge, so I did not use it. The label is Fact, but the identity of the saint is uncertain: owner may prefer Tradition."
     },
